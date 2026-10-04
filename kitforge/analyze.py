@@ -234,6 +234,27 @@ def analyze_one(sid: str, entry: dict, slug: str) -> dict:
         r["tempo"] = tempo_estimates(mono, dur, name_bpm)
     elif name_bpm:
         r["tempo"] = {"bpm_name": name_bpm}
+    # beat grid for long material: beat times -> first downbeat estimate + beat-interval stability
+    if dur >= 8.0:
+        try:
+            bpm_hint = r["tempo"]["bpm_best_fit"]
+            tempo_bt, beats = librosa.beat.beat_track(y=mono, sr=SR, start_bpm=bpm_hint, tightness=100, units="time", hop_length=512)
+            if len(beats) >= 8:
+                iv = np.diff(beats)
+                # downbeat: of the first 4 beats, the one with the strongest low-frequency onset energy
+                oenv = librosa.onset.onset_strength(y=mono, sr=SR, hop_length=512, fmax=200)
+                frames = librosa.time_to_frames(beats[:4], sr=SR, hop_length=512)
+                db_i = int(np.argmax(oenv[np.clip(frames, 0, len(oenv) - 1)]))
+                r["grid"] = {"first_beat": round(float(beats[0]), 4), "first_downbeat_guess": round(float(beats[db_i]), 4),
+                             "beat_bpm": round(float(60 / np.median(iv)), 2), "beat_jitter_ms": round(float(np.std(iv) * 1000), 1),
+                             "n_beats": int(len(beats))}
+                if np.std(iv) * 1000 < 30 and dur >= 20:
+                    # long material with a steady beat: the tracked tempo beats the bar-fit heuristic
+                    r["tempo"]["bpm_best_fit"] = r["grid"]["beat_bpm"]
+                    r["tempo"]["bars_at_best"] = round(dur * r["grid"]["beat_bpm"] / 240.0, 2)
+                    r["tempo"]["source"] = "beat_track"
+        except Exception as e:  # pragma: no cover
+            r["grid"] = {"error": repr(e)}
     # pitch / key
     is_kick = cat.startswith("kicks") or "impact" in cat
     if is_kick:

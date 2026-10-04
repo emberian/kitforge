@@ -74,9 +74,35 @@ script, render again. Three passes is normal.
 presence 2–5k / air>10k, dB vs pink), `third_oct_rel_pink`, `bar_rms_db`, `arrangement_range_db`,
 `onset_dev_ms` (mean/p90/late bias vs 16th grid), `flags`. `feedback.stems_report(dir)` per track.
 
+## Juice: modulation, buses, throws (`kitforge/mod.py`)
+Control signals — `LFO`, `Follow(track)`, `Steps`, `Ramp`, `Random` — evaluate per sample and can modulate each other
+(`LFO(rate_mod=LFO(...))`). Targets via `track.mod(param, signal)`: `lp hp gain pan width drive send:<name>`.
+Per-hit envelopes `pitch_env=(st0, st1, s)`, `lp_env=(hz0, hz1, s)`; parameter locks `pattern(..., plocks={"pitch": [...]})`.
+`song.bus(name, tracks, process=[P(ott), P(saturate)...])`, `song.send("echo", fx=[...])` + `track.send(...)` or a
+`Steps` throw. Processors: `ott`, `saturate`, `transient`, `width`, `haas`, `comb`, `deess`, `tilt`, `spit_delay`.
+Canonical uses (scene sources in the module docstring): hats `Follow` the kick inverted; filters ramp open into
+choruses; width 0.75 in verses → full in choruses; delay throws on phrase ends; OTT on music buses (gently).
+
+## Remixing songs (`packs/classics`, `kitforge/songmap.py`, `demos/jersey03.py`)
+`yt-dlp -x --audio-format wav` → `demucs -n htdemucs -d mps` (vocals/drums/bass/other) → ingest as a pack with
+`<song>/<stem>` ids → `python -m kitforge.songmap classics <song>` (beat-tracked tempo, kick-phase downbeat, per-bar
+vocal energy; `find_repeats` for choruses, `plot_section` to look) → `song.song_section(sample, src_bar, bars, bar=...,
+src_bpm=, first_beat=, nightcore=True|False)`. `nightcore=True` is the sped-up edit (pure resample so the source's bars
+land on ours); otherwise formant stretch. Use `Song(..., extra_packs=["classics"])` and ids like `classics:pony/vocals`.
+Sources are for local, personal remix work only: `sources/` and `packs/*/norm/` are gitignored; do not publish renders.
+
+## Loudness and pain (learned the hard way on jersey03)
+- Sped-up vocals move sibilance to 8–12 kHz: always `deess` + a small `tilt` on nightcored vocals; never ladder chops
+  above about +7 st in resample mode.
+- OTT lifts highs: keep vocal-bus depth ≤ 0.15 and cap the high band.
+- A track that sits at one RMS for minutes is a wall. Automate section levels (verses 2–4 dB under choruses),
+  open verses half-time, and keep limiter gain reduction ≤ ~5 dB. -10..-11 LUFS is a fine demo level.
+- The critic now flags: `HARSH` (5–10 kHz vs pink), `fizzy` (>10 kHz), `fatiguing`, `WALL OF SOUND`, hf-spike bars,
+  crushed+loud, and limiter GR > 6 dB. A clean flag list is necessary, not sufficient — ember's ears are the judge.
+
 ## Layout
 ```
-kitforge/   ingest.py analyze.py render.py synth.py surge.py tricks.py idioms.py mashup.py feedback.py
+kitforge/   ingest.py analyze.py render.py synth.py surge.py tricks.py idioms.py mod.py songmap.py mashup.py feedback.py
 packs/<slug>/  KIT.md  MANIFEST.md  manifest.json  files.json  norm/  sheets/      (norm/ is gitignored)
 recipes/GENRES.md       demos/*.py -> demos/out/
 ```

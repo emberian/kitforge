@@ -88,6 +88,8 @@ class Event:
     dur_beats: float | None = None  # truncate
     fade_out_ms: float = 8.0
     pan: float = 0.0
+    pitch_env: tuple | None = None  # (semis_start, semis_end, seconds): per-hit pitch glide (not cached)
+    lp_env: tuple | None = None  # (hz_start, hz_end, seconds): per-hit filter envelope
 
 
 @dataclass
@@ -103,6 +105,9 @@ class Track:
     mute: bool = False
     solo: bool = False
     latency_ms: float = 0.0  # shift every event on this track earlier (compensate slow sample attacks)
+    bus: str | None = None  # route into a Song.bus() instead of the master directly
+    mods: list = field(default_factory=list)  # (param, Signal) — see kitforge.mod
+    sends: dict = field(default_factory=dict)  # name -> level (0..1) or Signal
     mutes: list = field(default_factory=list)  # (start_beat, end_beat) silenced ranges, applied after fx
     clips: list = field(default_factory=list)  # (Clip, instrument, humanize_ms)
     automation: list = field(default_factory=list)  # (param, [(beat, value), ...]) param in hp|lp|gain
@@ -159,20 +164,32 @@ class Track:
             t += cycle * sb
         return evs
 
+    def mod(self, param: str, signal) -> "Track":
+        """Modulate lp/hp/gain/pan/width/drive or 'send:<name>' with a kitforge.mod Signal (LFO, Follow, Steps, Ramp...)."""
+        self.mods.append((param, signal))
+        return self
+
+    def send(self, name: str, level=1.0) -> "Track":
+        """Send this track (post-fx) into Song.send(name) return; level is 0..1 or a Signal (for throws)."""
+        self.sends[name] = level
+        return self
+
     def mute_range(self, start_beat: float, end_beat: float) -> "Track":
         """Silence this track between two beats (post-fx, with 5 ms fades). Use Song.t(bar, beat) for the beats."""
         self.mutes.append((start_beat, end_beat))
         return self
 
     def pattern(self, pat: str, sample: str, step: str = "16", bar: int = 0, bars: int | None = None,
-                gain: float = 0.0, swing: float | None = None, **kw) -> list[Event]:
-        """Repeat `pat` from `bar` for `bars` bars (default: to song end). Velocity: x/X/1-9."""
+                gain: float = 0.0, swing: float | None = None, plocks: dict | None = None, **kw) -> list[Event]:
+        """Repeat `pat` from `bar` for `bars` bars (default: to song end). Velocity: x/X/1-9.
+        plocks: {"pitch": [...], "gain": [...], "pan": [...], "lp_env": [...], ...} values rotate per *hit*."""
         pat = pat.replace("|", "").replace(" ", "")
         sb = STEP_BEATS[step]
         start = self.song.t(bar, 0)
         end = self.song.t(bar + bars, 0) if bars is not None else self.song.length_beats
         evs = []
         gain = gain + kw.pop("gain_db", 0.0)
+        plocks = plocks or {}
         i = 0
         while True:
             t = start + i * sb
@@ -184,7 +201,17 @@ class Track:
                 vel = -20 * (1 - int(ch) / 9) ** 1.5 * 1.5  # 9->0dB, 1->~-25dB
             if vel is not None:
                 tt = self.song.swung(t, sb, swing)
-                evs.append(self.at(tt, sample, gain_db=gain + vel, **kw))
+                ek = dict(kw)
+                h = len(evs)
+                for k, vals in plocks.items():
+                    v = vals[h % len(vals)]
+                    if k in ("gain", "gain_db"):
+                        vel += v
+                    elif k == "pitch":
+                        ek["pitch"] = kw.get("pitch", 0.0) + v
+                    else:
+                        ek[k] = v
+                evs.append(self.at(tt, sample, gain_db=gain + vel, **ek))
             i += 1
         return evs
 
@@ -208,8 +235,11 @@ class Track:
 
 
 class Song:
-    def __init__(self, pack: str, bpm: float = 138.0, bars: int = 8, swing: float = 50.0, swing_grid: str = "16"):
+    def __init__(self, pack: str, bpm: float = 138.0, bars: int = 8, swing: float = 50.0, swing_grid: str = "16",
+                 extra_packs: list[str] = ()):
+        """Samples from `pack` are addressed by bare id; samples from `extra_packs` as "slug:id"."""
         self.pack = pack
+        self.extra_packs = list(extra_packs)
         self.bpm = bpm
         self.bars = bars
         self.swing = swing  # percent: 50 straight, 66.7 triplet
@@ -217,13 +247,23 @@ class Song:
         self.tracks: dict[str, Track] = {}
         self.events: list[Event] = []
         self.sidechains: list[dict] = []
+        self.buses: dict[str, dict] = {}
+        self.returns: dict[str, dict] = {}
         self.master_fx: list = []
         self.master_gain_db = 0.0
         self.limiter_db = -1.0
         self.true_peak_db = -1.0  # final static trim so intersample peaks stay under this
         self.tail_beats = 4.0
         self.manifest = load_manifest(pack)
+        for ep in self.extra_packs:
+            self.manifest.update({f"{ep}:{k}": v for k, v in load_manifest(ep).items()})
         self._cache: dict = {}
+
+    def _load(self, sample: str) -> np.ndarray:
+        if ":" in sample:
+            slug, sid = sample.split(":", 1)
+            return load_norm(slug, sid)
+        return load_norm(self.pack, sample)
 
     # ---- time helpers
     def t(self, bar: int, beat: float = 0.0) -> float:
@@ -282,6 +322,42 @@ class Song:
                              dur_beats=bars_len * 4.0, gain_db=gain, **kw))
         return evs
 
+    def song_section(self, sample: str, src_bar: float, bars: float, track: str = "song", bar: int = 0, beat: float = 0.0,
+                     src_bpm: float | None = None, first_beat: float | None = None, pitch: float = 0.0,
+                     pitch_mode: str = "formant", gain: float = 0.0, nightcore: bool = False, **kw) -> Event:
+        """Drop `bars` bars of a source song, starting at its bar `src_bar` (on ITS beat grid: manifest tempo + first
+        downbeat), at our (bar, beat), time-stretched to our bpm. Use for acapellas/instrumental stems of long material.
+        src_bpm / first_beat default to the manifest's bpm_best_fit (or bpm_name) and beat grid `first_beat`."""
+        m = self.manifest[sample]
+        t = m.get("tempo", {})
+        sb = src_bpm or t.get("bpm_name") or t.get("bpm_best_fit")
+        if not sb:
+            raise ValueError(f"{sample}: no tempo known; pass src_bpm=")
+        fb = first_beat if first_beat is not None else m.get("grid", {}).get("downbeat", m.get("grid", {}).get("first_beat", m.get("active_start", 0.0)))
+        start = fb + src_bar * 240.0 / sb
+        end = start + bars * 240.0 / sb
+        tr = self.track(track)
+        if nightcore:
+            # the "sped-up edit": resample so the source's bars land on ours; pitch rises with it (plus any extra `pitch`)
+            semis = 12 * math.log2(self.bpm / sb) + pitch
+            return tr.at(self.t(bar, beat), sample, start=start, end=end, pitch=semis, pitch_mode="resample",
+                         gain_db=gain, dur_beats=bars * 4.0, **kw)
+        return tr.at(self.t(bar, beat), sample, start=start, end=end, stretch_to_bpm=sb, pitch=pitch, pitch_mode=pitch_mode,
+                     gain_db=gain, dur_beats=bars * 4.0, **kw)
+
+    def bus(self, name: str, tracks: list[str], fx: list | None = None, gain_db: float = 0.0, process: list | None = None) -> str:
+        """Group tracks: their post-fx output sums into this bus, then bus fx (pedalboard plugins or P(fn) processors),
+        then the master. Sidechain targets/sources may name a bus too."""
+        self.buses[name] = {"tracks": list(tracks), "fx": list(fx or []) + [_PyFx(f) for f in (process or [])], "gain_db": gain_db}
+        for t in tracks:
+            self.track(t).bus = name
+        return name
+
+    def send(self, name: str, fx: list, gain_db: float = 0.0, process: list | None = None) -> str:
+        """Return track: Track.send(name, level) feeds it; fx usually a 100%-wet Reverb/Delay."""
+        self.returns[name] = {"fx": list(fx) + [_PyFx(f) for f in (process or [])], "gain_db": gain_db}
+        return name
+
     def sidechain(self, target: str, source: str = "kick", amount_db: float = 6.0, attack_ms: float = 2.0,
                   release_ms: float = 150.0):
         self.sidechains.append(dict(target=target, source=source, amount_db=amount_db, attack_ms=attack_ms, release_ms=release_ms))
@@ -317,19 +393,13 @@ class Song:
         key = (ev.sample, ev.pitch, ev.pitch_mode, ev.start, ev.end, ev.slice, ev.onset_slice, ev.reverse, ev.stretch_to_bpm)
         if key in self._cache:
             return self._cache[key]
-        a = load_norm(self.pack, ev.sample)
+        a = self._load(ev.sample)
+        s, e = self._slice_bounds(ev.sample, ev, len(a))
+        a = a[s:e].copy()
         if ev.stretch_to_bpm:
-            # stretch whole loop first so onset times scale consistently
             factor = self.bpm / ev.stretch_to_bpm  # >1 => faster/shorter
             if abs(factor - 1) > 1e-3:
                 a = pb.time_stretch(a.T.copy(), SR, stretch_factor=factor).T.copy()
-        n_total = len(a)
-        s, e = self._slice_bounds(ev.sample, ev, n_total)
-        if ev.stretch_to_bpm and ev.slice is not None and ev.onset_slice:
-            # onset times were measured on the unstretched sample
-            f = n_total / len(load_norm(self.pack, ev.sample))
-            s, e = int(s * f), int(e * f)
-        a = a[s:e].copy()
         if ev.reverse:
             a = a[::-1].copy()
         if abs(ev.pitch) > 1e-6:
@@ -351,8 +421,14 @@ class Song:
         for ev in sorted(self.events, key=lambda e: e.time):
             tr = self.tracks[ev.track]
             if ev.sample not in self.manifest:
-                raise KeyError(f"unknown sample {ev.sample!r} in pack {self.pack}")
+                raise KeyError(f"unknown sample {ev.sample!r} (packs: {[self.pack, *self.extra_packs]})")
             a = self._prepare(ev)
+            if ev.pitch_env or ev.lp_env:
+                from .mod import lp_env as _lpe, pitch_env as _pe
+                if ev.pitch_env:
+                    a = _pe(a, *ev.pitch_env)
+                if ev.lp_env:
+                    a = _lpe(a, *ev.lp_env)
             pos = max(0, self.beats_to_samples(ev.time) - int(tr.latency_ms * SR / 1000))
             if ev.dur_beats is not None:
                 a = a[: self.beats_to_samples(ev.dur_beats)]
@@ -379,14 +455,20 @@ class Song:
                 bufs[name] += render_clip(clip, inst, self.bpm, total, humanize_ms=hum)
         # sidechain (pre-fx, uses raw source bus)
         for sc in self.sidechains:
+            if sc["target"] not in bufs:
+                continue  # bus targets are handled after bus summing
             src = bufs[sc["source"]].mean(axis=1)
             env = _follower(np.abs(src), sc["attack_ms"], sc["release_ms"])
             env /= (env.max() or 1.0)
             g = 10 ** (-sc["amount_db"] * env / 20)
             bufs[sc["target"]] *= g[:, None]
-        # track fx
+        # track fx -> mods -> sends -> bus or master
+        raw = {n: b for n, b in bufs.items()}  # pre-fx copies for Follow signals
         solo = any(t.solo for t in self.tracks.values())
         mix = np.zeros((total, 2), np.float32)
+        busbufs = {n: np.zeros((total, 2), np.float32) for n in self.buses}
+        retbufs = {n: np.zeros((total, 2), np.float32) for n in self.returns}
+        from .mod import apply_target
         for name, tr in self.tracks.items():
             if tr.mute or (solo and not tr.solo):
                 continue
@@ -402,6 +484,10 @@ class Song:
             for plug in chain:
                 b = plug.fn(b) if isinstance(plug, _PyFx) else pb.Pedalboard([plug])(b.T, SR).T
                 b = _fit(b, total)  # processors may change length (halfspeed, tape_stop)
+            for param, sig in tr.mods:
+                if param.startswith("send:"):
+                    continue
+                b = apply_target(b, param, np.asarray(sig(self, total, raw), dtype=np.float64))
             for m0, m1 in tr.mutes:
                 i0, i1 = self.beats_to_samples(m0), self.beats_to_samples(m1)
                 f = int(SR * 0.005)
@@ -413,7 +499,36 @@ class Song:
                 gl, gr = _pan_gains(tr.pan)
                 b = b * np.array([gl, gr], np.float32) * math.sqrt(2)
             bufs[name] = b.astype(np.float32)
-            mix += bufs[name]
+            # sends (static levels and send:<name> mods / throws)
+            for sname, level in tr.sends.items():
+                lv = np.asarray(level(self, total, raw)) if callable(level) else float(level)
+                retbufs[sname] += (bufs[name] * (lv[:, None] if isinstance(lv, np.ndarray) else lv)).astype(np.float32)
+            for param, sig in tr.mods:
+                if param.startswith("send:"):
+                    sname = param.split(":", 1)[1]
+                    lv = np.clip(np.asarray(sig(self, total, raw)), 0, 4)
+                    retbufs[sname] += (bufs[name] * lv[:, None]).astype(np.float32)
+            if tr.bus and tr.bus in busbufs:
+                busbufs[tr.bus] += bufs[name]
+            else:
+                mix += bufs[name]
+        for name, cfg in self.returns.items():
+            b = retbufs[name]
+            for plug in cfg["fx"]:
+                b = _fit(plug.fn(b) if isinstance(plug, _PyFx) else pb.Pedalboard([plug])(b.T, SR).T, total)
+            bufs["return_" + name] = (b * 10 ** (cfg["gain_db"] / 20)).astype(np.float32)
+            mix += bufs["return_" + name]
+        for name, cfg in self.buses.items():
+            b = busbufs[name]
+            for sc in [x for x in self.sidechains if x["target"] == name]:
+                src = (bufs.get(sc["source"]) if sc["source"] in bufs else busbufs.get(sc["source"])).mean(axis=1)
+                env = _follower(np.abs(src), sc["attack_ms"], sc["release_ms"])
+                env /= (env.max() or 1.0)
+                b = b * (10 ** (-sc["amount_db"] * env / 20))[:, None]
+            for plug in cfg["fx"]:
+                b = _fit(plug.fn(b) if isinstance(plug, _PyFx) else pb.Pedalboard([plug])(b.T, SR).T, total)
+            bufs["bus_" + name] = (b * 10 ** (cfg["gain_db"] / 20)).astype(np.float32)
+            mix += bufs["bus_" + name]
         chain = list(self.master_fx) + [pb.Gain(self.master_gain_db)]
         mix = pb.Pedalboard(chain)(mix.T, SR).T
         mix, gr = true_peak_limit(mix, ceiling_db=min(self.limiter_db, self.true_peak_db if self.true_peak_db is not None else 0.0))
@@ -427,7 +542,7 @@ class Song:
                 sf.write(sd / f"{name}.wav", b, SR, subtype="FLOAT")
         self.save_spec(out.with_suffix(".spec.json"))
         if report:
-            print(f"  limiter max gain reduction {self.last_limiter_gr_db:.1f} dB")
+            print(f"  limiter max gain reduction {self.last_limiter_gr_db:.1f} dB" + ("   ! > 6 dB: the limiter is doing the mixing; lower track peaks / master gain" if self.last_limiter_gr_db > 6 else ""))
             from .feedback import report as _report
             _report(wav, bpm=self.bpm, bars=self.bars, out_png=out.with_suffix(".report.png"), out_json=out.with_suffix(".report.json"))
             if stems:

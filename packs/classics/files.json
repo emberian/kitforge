@@ -1,0 +1,356 @@
+{
+ "source": "/Users/ember/dev/kitforge/sources/classics_pack",
+ "slug": "classics",
+ "files": {
+  "beyonce_crazy_in_love/bass": {
+   "id": "beyonce_crazy_in_love/bass",
+   "category": "beyonce_crazy_in_love",
+   "original": "beyonce_crazy_in_love/bass.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/beyonce_crazy_in_love/bass.wav",
+   "norm": "norm/beyonce_crazy_in_love/bass.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 231.247551
+   }
+  },
+  "beyonce_crazy_in_love/drums": {
+   "id": "beyonce_crazy_in_love/drums",
+   "category": "beyonce_crazy_in_love",
+   "original": "beyonce_crazy_in_love/drums.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/beyonce_crazy_in_love/drums.wav",
+   "norm": "norm/beyonce_crazy_in_love/drums.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 231.247551
+   }
+  },
+  "beyonce_crazy_in_love/mix": {
+   "id": "beyonce_crazy_in_love/mix",
+   "category": "beyonce_crazy_in_love",
+   "original": "beyonce_crazy_in_love/mix.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/beyonce_crazy_in_love/mix.wav",
+   "norm": "norm/beyonce_crazy_in_love/mix.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 231.247542
+   }
+  },
+  "beyonce_crazy_in_love/other": {
+   "id": "beyonce_crazy_in_love/other",
+   "category": "beyonce_crazy_in_love",
+   "original": "beyonce_crazy_in_love/other.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/beyonce_crazy_in_love/other.wav",
+   "norm": "norm/beyonce_crazy_in_love/other.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 231.247551
+   }
+  },
+  "beyonce_crazy_in_love/vocals": {
+   "id": "beyonce_crazy_in_love/vocals",
+   "category": "beyonce_crazy_in_love",
+   "original": "beyonce_crazy_in_love/vocals.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/beyonce_crazy_in_love/vocals.wav",
+   "norm": "norm/beyonce_crazy_in_love/vocals.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 231.247551
+   }
+  },
+  "cassie_me_and_u/bass": {
+   "id": "cassie_me_and_u/bass",
+   "category": "cassie_me_and_u",
+   "original": "cassie_me_and_u/bass.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/cassie_me_and_u/bass.wav",
+   "norm": "norm/cassie_me_and_u/bass.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 194.573107
+   }
+  },
+  "cassie_me_and_u/drums": {
+   "id": "cassie_me_and_u/drums",
+   "category": "cassie_me_and_u",
+   "original": "cassie_me_and_u/drums.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/cassie_me_and_u/drums.wav",
+   "norm": "norm/cassie_me_and_u/drums.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 194.573107
+   }
+  },
+  "cassie_me_and_u/mix": {
+   "id": "cassie_me_and_u/mix",
+   "category": "cassie_me_and_u",
+   "original": "cassie_me_and_u/mix.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/cassie_me_and_u/mix.wav",
+   "norm": "norm/cassie_me_and_u/mix.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 194.573104
+   }
+  },
+  "cassie_me_and_u/other": {
+   "id": "cassie_me_and_u/other",
+   "category": "cassie_me_and_u",
+   "original": "cassie_me_and_u/other.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/cassie_me_and_u/other.wav",
+   "norm": "norm/cassie_me_and_u/other.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 194.573107
+   }
+  },
+  "cassie_me_and_u/vocals": {
+   "id": "cassie_me_and_u/vocals",
+   "category": "cassie_me_and_u",
+   "original": "cassie_me_and_u/vocals.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/cassie_me_and_u/vocals.wav",
+   "norm": "norm/cassie_me_and_u/vocals.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 194.573107
+   }
+  },
+  "ciara_1_2_step/bass": {
+   "id": "ciara_1_2_step/bass",
+   "category": "ciara_1_2_step",
+   "original": "ciara_1_2_step/bass.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/ciara_1_2_step/bass.wav",
+   "norm": "norm/ciara_1_2_step/bass.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 204.382041
+   }
+  },
+  "ciara_1_2_step/drums": {
+   "id": "ciara_1_2_step/drums",
+   "category": "ciara_1_2_step",
+   "original": "ciara_1_2_step/drums.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/ciara_1_2_step/drums.wav",
+   "norm": "norm/ciara_1_2_step/drums.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 204.382041
+   }
+  },
+  "ciara_1_2_step/mix": {
+   "id": "ciara_1_2_step/mix",
+   "category": "ciara_1_2_step",
+   "original": "ciara_1_2_step/mix.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/ciara_1_2_step/mix.wav",
+   "norm": "norm/ciara_1_2_step/mix.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 204.382042
+   }
+  },
+  "ciara_1_2_step/other": {
+   "id": "ciara_1_2_step/other",
+   "category": "ciara_1_2_step",
+   "original": "ciara_1_2_step/other.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/ciara_1_2_step/other.wav",
+   "norm": "norm/ciara_1_2_step/other.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 204.382041
+   }
+  },
+  "ciara_1_2_step/vocals": {
+   "id": "ciara_1_2_step/vocals",
+   "category": "ciara_1_2_step",
+   "original": "ciara_1_2_step/vocals.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/ciara_1_2_step/vocals.wav",
+   "norm": "norm/ciara_1_2_step/vocals.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 204.382041
+   }
+  },
+  "ginuwine_pony/bass": {
+   "id": "ginuwine_pony/bass",
+   "category": "ginuwine_pony",
+   "original": "ginuwine_pony/bass.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/ginuwine_pony/bass.wav",
+   "norm": "norm/ginuwine_pony/bass.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 251.733333
+   }
+  },
+  "ginuwine_pony/drums": {
+   "id": "ginuwine_pony/drums",
+   "category": "ginuwine_pony",
+   "original": "ginuwine_pony/drums.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/ginuwine_pony/drums.wav",
+   "norm": "norm/ginuwine_pony/drums.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 251.733333
+   }
+  },
+  "ginuwine_pony/mix": {
+   "id": "ginuwine_pony/mix",
+   "category": "ginuwine_pony",
+   "original": "ginuwine_pony/mix.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/ginuwine_pony/mix.wav",
+   "norm": "norm/ginuwine_pony/mix.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 251.733333
+   }
+  },
+  "ginuwine_pony/other": {
+   "id": "ginuwine_pony/other",
+   "category": "ginuwine_pony",
+   "original": "ginuwine_pony/other.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/ginuwine_pony/other.wav",
+   "norm": "norm/ginuwine_pony/other.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 251.733333
+   }
+  },
+  "ginuwine_pony/vocals": {
+   "id": "ginuwine_pony/vocals",
+   "category": "ginuwine_pony",
+   "original": "ginuwine_pony/vocals.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/ginuwine_pony/vocals.wav",
+   "norm": "norm/ginuwine_pony/vocals.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 251.733333
+   }
+  },
+  "imogen_heap_hide_and_seek/bass": {
+   "id": "imogen_heap_hide_and_seek/bass",
+   "category": "imogen_heap_hide_and_seek",
+   "original": "imogen_heap_hide_and_seek/bass.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/imogen_heap_hide_and_seek/bass.wav",
+   "norm": "norm/imogen_heap_hide_and_seek/bass.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 269.583696
+   }
+  },
+  "imogen_heap_hide_and_seek/drums": {
+   "id": "imogen_heap_hide_and_seek/drums",
+   "category": "imogen_heap_hide_and_seek",
+   "original": "imogen_heap_hide_and_seek/drums.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/imogen_heap_hide_and_seek/drums.wav",
+   "norm": "norm/imogen_heap_hide_and_seek/drums.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 269.583696
+   }
+  },
+  "imogen_heap_hide_and_seek/mix": {
+   "id": "imogen_heap_hide_and_seek/mix",
+   "category": "imogen_heap_hide_and_seek",
+   "original": "imogen_heap_hide_and_seek/mix.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/imogen_heap_hide_and_seek/mix.wav",
+   "norm": "norm/imogen_heap_hide_and_seek/mix.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 269.583688
+   }
+  },
+  "imogen_heap_hide_and_seek/other": {
+   "id": "imogen_heap_hide_and_seek/other",
+   "category": "imogen_heap_hide_and_seek",
+   "original": "imogen_heap_hide_and_seek/other.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/imogen_heap_hide_and_seek/other.wav",
+   "norm": "norm/imogen_heap_hide_and_seek/other.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 269.583696
+   }
+  },
+  "imogen_heap_hide_and_seek/vocals": {
+   "id": "imogen_heap_hide_and_seek/vocals",
+   "category": "imogen_heap_hide_and_seek",
+   "original": "imogen_heap_hide_and_seek/vocals.wav",
+   "original_abs": "/Users/ember/dev/kitforge/sources/classics_pack/imogen_heap_hide_and_seek/vocals.wav",
+   "norm": "norm/imogen_heap_hide_and_seek/vocals.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 269.583696
+   }
+  }
+ }
+}

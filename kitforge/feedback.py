@@ -53,6 +53,11 @@ def third_octave_rel_pink(mono: np.ndarray) -> list[float]:
     return list(np.round(out - np.median(out[4:20]), 1))  # relative to the 63Hz-2kHz median
 
 
+def sosfilt_band(x: np.ndarray, lo: float, hi: float) -> np.ndarray:
+    from scipy.signal import butter, sosfilt
+    return sosfilt(butter(4, [lo, hi], btype="band", fs=SR, output="sos"), x)
+
+
 def third_octave_abs(mono: np.ndarray) -> list[float]:
     """1/3-octave band energies in dB relative to pink at 0 dBFS RMS overall — comparable across stems."""
     n = 1 << 15
@@ -113,8 +118,14 @@ def analyze(wav: Path, bpm: float | None, bars: int | None) -> dict:
         "kick 60-120": round(float(np.mean([f3[63], f3[80], f3[100]])), 1),
         "mud 200-400": round(float(np.mean([f3[200], f3[250], f3[315], f3[400]])), 1),
         "presence 2-5k": round(float(np.mean([f3[2000], f3[2500], f3[3150], f3[4000], f3[5000]])), 1),
+        "harsh 5-10k": round(float(np.mean([f3[5000], f3[6300], f3[8000], f3[10000]])), 1),
         "air >10k": round(float(np.mean([f3[10000], f3[12500], f3[16000]])), 1),
     }
+    # fatigue: how much of the time the 5-10k band is within 6 dB of its own peak (constant fizz) and overall density
+    hb = librosa.feature.rms(y=sosfilt_band(mono, 5000, 10000), frame_length=2048, hop_length=1024)[0]
+    fb = librosa.feature.rms(y=mono, frame_length=2048, hop_length=1024)[0]
+    act = fb > fb.max() * 10 ** (-30 / 20)
+    r["hf_ratio_db"] = round(float(np.median(20 * np.log10((hb[act] + 1e-9) / (fb[act] + 1e-9)))), 1) if act.any() else None
     # per-bar energy
     if bpm:
         bar_s = 240.0 / bpm
@@ -124,6 +135,14 @@ def analyze(wav: Path, bpm: float | None, bars: int | None) -> dict:
             seg = mono[int(b * bar_s * SR): int((b + 1) * bar_s * SR)]
             per.append(round(float(db(np.sqrt(np.mean(seg ** 2)) if len(seg) else 1e-9)), 1))
         r["bar_rms_db"] = per
+        loud = [x for x in per if x > max(per) - 6]
+        r["loud_bar_spread_db"] = round(float(np.std(loud)), 2) if len(loud) >= 8 else None
+        r["loud_bar_share"] = round(len(loud) / max(1, len(per)), 2)
+        hb = sosfilt_band(mono, 5000, 12000)
+        hper = [float(db(np.sqrt(np.mean(hb[int(b * bar_s * SR): int((b + 1) * bar_s * SR)] ** 2)) + 1e-9)) for b in range(nb)]
+        r["hf_bar_db"] = [round(x, 1) for x in hper]
+        med = float(np.median([x for x in hper if x > -60])) if any(x > -60 for x in hper) else -60
+        r["harsh_bars"] = [int(i) for i in np.argsort(hper)[::-1][:8] if hper[i] > med + 3]
         r["arrangement_range_db"] = round(max(per) - min(p for p in per if p > -60) if any(p > -60 for p in per) else 0, 1)
         # onsets vs 16th grid
         ons = librosa.onset.onset_detect(y=mono, sr=SR, units="time", hop_length=128, backtrack=False)
@@ -161,6 +180,18 @@ def analyze(wav: Path, bpm: float | None, bars: int | None) -> dict:
         flags.append("sub excessive")
     if r["bands"]["presence 2-5k"] > 6:
         flags.append("harsh 2-5k")
+    if r["bands"]["harsh 5-10k"] > -3.5:
+        flags.append(f"HARSH: 5-10 kHz at {r['bands']['harsh 5-10k']:+.1f} dB vs pink (club mixes sit -6..-10). De-ess pitched-up vocals, tilt highs, check squeaks/hats")
+    if r["bands"]["air >10k"] > -4:
+        flags.append(f"fizzy: >10 kHz at {r['bands']['air >10k']:+.1f} dB vs pink (aim -6..-12)")
+    if r.get("hf_ratio_db") is not None and r["hf_ratio_db"] > -16:
+        flags.append(f"fatiguing: 5-10 kHz is only {abs(r['hf_ratio_db']):.0f} dB under the full-band level most of the time (aim >= 18 dB under)")
+    if r.get("loud_bar_spread_db") is not None and (bars or 0) >= 48 and r["loud_bar_spread_db"] < 1.0 and r["loud_bar_share"] > 0.6:
+        flags.append(f"WALL OF SOUND: {r['loud_bar_share']:.0%} of bars sit within {r['loud_bar_spread_db']:.1f} dB of each other — no verse/chorus contrast; automate section levels (verses 2-4 dB under choruses), thin the drums somewhere")
+    if r.get("harsh_bars"):
+        flags.append(f"hf spikes (5-12 kHz > 3 dB over the track median) at bars {sorted(r['harsh_bars'])}: check stems there (pitched-up chops, stutters)")
+    if r["lufs_i"] is not None and r["lufs_i"] > -9.5 and r["crest_db"] < 8.5:
+        flags.append("crushed + loud (crest < 8.5 dB above -9.5 LUFS): it will hurt at volume; back off master gain / limiter GR")
     if r["stereo_corr"] < 0.2:
         flags.append("stereo correlation low (mono compatibility)")
     if r["stereo_corr"] > 0.98:
