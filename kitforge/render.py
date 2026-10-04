@@ -102,6 +102,8 @@ class Track:
     choke: bool = False  # new event cuts previous on this track
     mute: bool = False
     solo: bool = False
+    latency_ms: float = 0.0  # shift every event on this track earlier (compensate slow sample attacks)
+    mutes: list = field(default_factory=list)  # (start_beat, end_beat) silenced ranges, applied after fx
     clips: list = field(default_factory=list)  # (Clip, instrument, humanize_ms)
     automation: list = field(default_factory=list)  # (param, [(beat, value), ...]) param in hp|lp|gain
 
@@ -110,9 +112,10 @@ class Track:
         self.clips.append((clip, inst, humanize_ms))
         return self
 
-    def automate(self, param: str, points: list[tuple[float, float]]) -> "Track":
-        """Linear automation of 'hp' / 'lp' (Hz) or 'gain' (dB) over beats: [(beat, value), ...]."""
-        self.automation.append((param, sorted(points)))
+    def automate(self, param: str, points: list[tuple[float, float]], mode: str = "linear") -> "Track":
+        """Automation of 'hp' / 'lp' (Hz) or 'gain' (dB) over beats: [(beat, value), ...]; mode 'linear' or 'step'
+        (hold each value until the next point)."""
+        self.automation.append((param, sorted(points), mode))
         return self
 
     def process(self, fn) -> "Track":
@@ -130,6 +133,37 @@ class Track:
         self.song.events.append(ev)
         return ev
 
+    def poly(self, sample: str, cycle: int, step: str = "16", offset: int = 0, bar: int = 0, bars: int | None = None,
+             holes: str | None = None, pitch_cycle: list | None = None, gain_cycle: list | None = None, **kw) -> list[Event]:
+        """Polymetric hits: every `cycle` steps from (bar + offset steps), until `bars` end. `holes` is a 16-char
+        mask per bar ('x' = allowed): e.g. ".xxxxxxxxxxxxxxx" skips downbeats. pitch_cycle/gain_cycle rotate per hit."""
+        sb = STEP_BEATS[step]
+        start = self.song.t(bar, 0) + offset * sb
+        end = self.song.t(bar + bars, 0) if bars is not None else self.song.length_beats
+        evs = []
+        n = 0
+        t = start
+        while t < end - 1e-9:
+            if holes:
+                pos16 = int(round((t % 4.0) / 0.25)) % 16
+                if holes[pos16] not in "xX":
+                    t += cycle * sb
+                    continue
+            ev_kw = dict(kw)
+            if pitch_cycle:
+                ev_kw["pitch"] = pitch_cycle[n % len(pitch_cycle)] + kw.get("pitch", 0.0)
+            if gain_cycle:
+                ev_kw["gain_db"] = gain_cycle[n % len(gain_cycle)] + kw.get("gain_db", 0.0)
+            evs.append(self.at(t, sample, **ev_kw))
+            n += 1
+            t += cycle * sb
+        return evs
+
+    def mute_range(self, start_beat: float, end_beat: float) -> "Track":
+        """Silence this track between two beats (post-fx, with 5 ms fades). Use Song.t(bar, beat) for the beats."""
+        self.mutes.append((start_beat, end_beat))
+        return self
+
     def pattern(self, pat: str, sample: str, step: str = "16", bar: int = 0, bars: int | None = None,
                 gain: float = 0.0, swing: float | None = None, **kw) -> list[Event]:
         """Repeat `pat` from `bar` for `bars` bars (default: to song end). Velocity: x/X/1-9."""
@@ -138,6 +172,7 @@ class Track:
         start = self.song.t(bar, 0)
         end = self.song.t(bar + bars, 0) if bars is not None else self.song.length_beats
         evs = []
+        gain = gain + kw.pop("gain_db", 0.0)
         i = 0
         while True:
             t = start + i * sb
@@ -149,7 +184,7 @@ class Track:
                 vel = -20 * (1 - int(ch) / 9) ** 1.5 * 1.5  # 9->0dB, 1->~-25dB
             if vel is not None:
                 tt = self.song.swung(t, sb, swing)
-                evs.append(self.at(tt, sample, gain_db=gain + vel + kw.pop("gain_db", 0.0), **kw))
+                evs.append(self.at(tt, sample, gain_db=gain + vel, **kw))
             i += 1
         return evs
 
@@ -162,7 +197,7 @@ class Track:
         t0 = self.song.t(bar, 0)
         bpm_native = self.song.native_bpm(sample) if stretch else None
         if n is None:
-            n = 8 if not onset else min(16, max(1, self.song.manifest.get(sample, {}).get("onsets", 8)))
+            n = 8 if not onset else max(1, min(64, self.song.manifest.get(sample, {}).get("onsets", 8)))
         evs = []
         for i, sl in enumerate(pattern):
             if sl is None:
@@ -262,10 +297,12 @@ class Song:
         if ev.slice is not None:
             i, n = ev.slice
             if ev.onset_slice:
-                ons = self.manifest.get(sample, {}).get("onset_times", [])
-                pts = [int(o * SR) for o in ons[:n]]
-                if not pts or pts[0] > SR * 0.05:
-                    pts = [0] + pts
+                m = self.manifest.get(sample, {})
+                ons = m.get("onset_times", [])
+                lead = int(m.get("active_start", 0.0) * SR)
+                pts = [int(o * SR) for o in ons if o * SR >= lead - SR * 0.02]
+                if not pts or pts[0] > lead + SR * 0.05:
+                    pts = [lead] + pts
                 pts = sorted(set(pts))[:n]
                 pts.append(n_total)
                 i = i % (len(pts) - 1)
@@ -316,7 +353,7 @@ class Song:
             if ev.sample not in self.manifest:
                 raise KeyError(f"unknown sample {ev.sample!r} in pack {self.pack}")
             a = self._prepare(ev)
-            pos = self.beats_to_samples(ev.time)
+            pos = max(0, self.beats_to_samples(ev.time) - int(tr.latency_ms * SR / 1000))
             if ev.dur_beats is not None:
                 a = a[: self.beats_to_samples(ev.dur_beats)]
             a = a * (10 ** (ev.gain_db / 20))
@@ -365,20 +402,22 @@ class Song:
             for plug in chain:
                 b = plug.fn(b) if isinstance(plug, _PyFx) else pb.Pedalboard([plug])(b.T, SR).T
                 b = _fit(b, total)  # processors may change length (halfspeed, tape_stop)
+            for m0, m1 in tr.mutes:
+                i0, i1 = self.beats_to_samples(m0), self.beats_to_samples(m1)
+                f = int(SR * 0.005)
+                b[i0:i1] = 0
+                b[max(0, i0 - f):i0] *= np.linspace(1, 0, min(f, i0))[:, None]
+                b[i1:i1 + f] *= np.linspace(0, 1, min(f, max(0, len(b) - i1)))[:, None]
             b = b * (10 ** (tr.gain_db / 20))
             if tr.pan:
                 gl, gr = _pan_gains(tr.pan)
                 b = b * np.array([gl, gr], np.float32) * math.sqrt(2)
             bufs[name] = b.astype(np.float32)
             mix += bufs[name]
-        chain = list(self.master_fx) + [pb.Gain(self.master_gain_db), pb.Limiter(threshold_db=self.limiter_db, release_ms=80)]
+        chain = list(self.master_fx) + [pb.Gain(self.master_gain_db)]
         mix = pb.Pedalboard(chain)(mix.T, SR).T
-        if self.true_peak_db is not None:
-            up = librosa.resample(mix.T, orig_sr=SR, target_sr=SR * 4, res_type="soxr_hq")
-            tp = float(np.max(np.abs(up)))
-            ceil = 10 ** (self.true_peak_db / 20)
-            if tp > ceil:
-                mix = mix * (ceil / tp)
+        mix, gr = true_peak_limit(mix, ceiling_db=min(self.limiter_db, self.true_peak_db if self.true_peak_db is not None else 0.0))
+        self.last_limiter_gr_db = gr
         wav = out.with_suffix(".wav")
         sf.write(wav, mix, SR, subtype="PCM_24")
         if stems:
@@ -388,21 +427,26 @@ class Song:
                 sf.write(sd / f"{name}.wav", b, SR, subtype="FLOAT")
         self.save_spec(out.with_suffix(".spec.json"))
         if report:
+            print(f"  limiter max gain reduction {self.last_limiter_gr_db:.1f} dB")
             from .feedback import report as _report
             _report(wav, bpm=self.bpm, bars=self.bars, out_png=out.with_suffix(".report.png"), out_json=out.with_suffix(".report.json"))
             if stems:
                 from .feedback import print_stems
-                print_stems(sd)
+                print_stems(sd, bpm=self.bpm, bars=self.bars, heatmap_png=out.with_suffix(".arrangement.png"))
         return wav
 
     def _automate(self, b: np.ndarray, tr: Track, block: int = 1024) -> np.ndarray:
         n = len(b)
         beats = np.arange(n) / SR * self.bpm / 60.0
         out = b.copy()
-        for param, pts in tr.automation:
+        for param, pts, mode in tr.automation:
             xs = [p[0] for p in pts]
             ys = [p[1] for p in pts]
-            curve = np.interp(beats, xs, ys)
+            if mode == "step":
+                idx = np.clip(np.searchsorted(xs, beats, side="right") - 1, 0, len(ys) - 1)
+                curve = np.array(ys)[idx]
+            else:
+                curve = np.interp(beats, xs, ys)
             if param == "gain":
                 out *= (10 ** (curve / 20))[:, None].astype(np.float32)
                 continue
@@ -424,6 +468,34 @@ class Song:
         Path(path).write_text(json.dumps(spec, indent=1, default=str))
 
 
+def true_peak_limit(x: np.ndarray, ceiling_db: float = -1.0, lookahead_ms: float = 1.5, release_ms: float = 60.0,
+                    oversample: int = 4) -> tuple[np.ndarray, float]:
+    """Transparent lookahead brickwall: gain is computed on the 4x-oversampled peak envelope so intersample peaks
+    stay under `ceiling_db`. Returns (limited, max gain reduction dB). No makeup gain: it is a ceiling, not a drive."""
+    ceil = 10 ** (ceiling_db / 20)
+    up = librosa.resample(x.T, orig_sr=SR, target_sr=SR * oversample, res_type="soxr_hq")
+    pk = np.max(np.abs(up), axis=0)  # oversampled peak per oversampled sample
+    # per base-sample peak = max over its oversample group
+    n = len(x)
+    pk = pk[: n * oversample]
+    if len(pk) < n * oversample:
+        pk = np.pad(pk, (0, n * oversample - len(pk)))
+    pk = np.maximum(pk.reshape(n, oversample).max(axis=1), np.max(np.abs(x), axis=1))
+    need = np.minimum(1.0, ceil / np.maximum(pk, 1e-9))  # required gain per sample
+    la = int(lookahead_ms * SR / 1000)
+    # lookahead: a sample's gain must be the min over the next `la` samples (sliding window minimum)
+    from scipy.ndimage import minimum_filter1d
+    g_target = minimum_filter1d(need, size=max(1, la), origin=-(max(1, la) // 2), mode="nearest")
+    # smooth: instantaneous attack (already handled by lookahead min) + exponential release
+    cr = math.exp(-1.0 / (SR * release_ms / 1000))
+    g = _release_jit(g_target.astype(np.float64), cr)
+    # smooth the attack over the lookahead window so there are no clicks (never raises gain)
+    from scipy.ndimage import uniform_filter1d
+    g = np.minimum(g, uniform_filter1d(g, size=max(1, la), mode="nearest"))
+    out = (x * g[:, None]).astype(np.float32)
+    return out, float(-20 * math.log10(max(g.min(), 1e-6)))
+
+
 def _follower(x: np.ndarray, attack_ms: float, release_ms: float) -> np.ndarray:
     ca = math.exp(-1.0 / (SR * attack_ms / 1000))
     cr = math.exp(-1.0 / (SR * release_ms / 1000))
@@ -432,6 +504,16 @@ def _follower(x: np.ndarray, attack_ms: float, release_ms: float) -> np.ndarray:
 
 try:
     from numba import njit
+
+    @njit(cache=True)
+    def _release_jit(t, cr):
+        out = np.empty_like(t)
+        g = 1.0
+        for i in range(len(t)):
+            v = t[i]
+            g = v if v < g else cr * g + (1 - cr) * v
+            out[i] = g
+        return out
 
     @njit(cache=True)
     def _follow_jit(x, ca, cr):
@@ -443,6 +525,15 @@ try:
             out[i] = e
         return out
 except ImportError:  # pragma: no cover
+    def _release_jit(t, cr):
+        out = np.empty_like(t)
+        g = 1.0
+        for i in range(len(t)):
+            v = t[i]
+            g = v if v < g else cr * g + (1 - cr) * v
+            out[i] = g
+        return out
+
     def _follow_jit(x, ca, cr):
         out = np.empty_like(x)
         e = 0.0

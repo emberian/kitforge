@@ -27,11 +27,13 @@ def stutter(track: Track, sample: str, bar: int, beat: float, step: str = "32", 
     """Retrigger `sample` `count` times from (bar, beat). accel<1 speeds up each successive gap (buildup)."""
     sb = STEP_BEATS[step]
     t = track.song.t(bar, beat)
+    base_gain = kw.pop("gain_db", 0.0) + kw.pop("gain", 0.0)
+    base_pitch = kw.pop("pitch", 0.0)
     evs = []
     gap = sb
     for i in range(count):
-        evs.append(track.at(t, sample, gain_db=kw.pop("gain_db", 0.0) + gain_ramp_db * i / max(1, count - 1),
-                            pitch=pitch_ramp * i / max(1, count - 1), dur_beats=gap, **kw))
+        evs.append(track.at(t, sample, gain_db=base_gain + gain_ramp_db * i / max(1, count - 1),
+                            pitch=base_pitch + pitch_ramp * i / max(1, count - 1), dur_beats=gap, **kw))
         t += gap
         gap *= accel
     return evs
@@ -58,8 +60,9 @@ def pitch_ladder(track: Track, sample: str, bar: int, beat: float, semis: list[f
 
 # --------------------------------------------------------------------------- buffer processors
 
-def tape_stop(buf: np.ndarray, start_s: float, length_s: float = 0.6, curve: float = 2.0) -> np.ndarray:
-    """Tape/turntable stop beginning at start_s: pitch and speed fall to 0 over length_s, then silence."""
+def tape_stop(buf: np.ndarray, start_s: float, length_s: float = 0.6, curve: float = 2.0, resume_s: float | None = None) -> np.ndarray:
+    """Tape/turntable stop beginning at start_s: pitch and speed fall to 0 over length_s, then silence until
+    resume_s (default: start_s + length_s, i.e. the original continues right after the stop)."""
     s0 = int(start_s * SR)
     n = int(length_s * SR)
     out = buf.copy()
@@ -72,7 +75,8 @@ def tape_stop(buf: np.ndarray, start_s: float, length_s: float = 0.6, curve: flo
     i = pos.astype(int)
     frac = (pos - i)[:, None]
     res = seg[i] * (1 - frac) + seg[i + 1] * frac
-    out[s0:] = 0
+    r0 = int(resume_s * SR) if resume_s is not None else s0 + n
+    out[s0:r0] = 0
     out[s0: s0 + len(res)] = res * (speed[: len(res)] ** 0.3)[:, None]
     return out
 

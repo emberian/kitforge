@@ -1,7 +1,8 @@
 # twerknation28 — the kit
 
-**Source:** `@twerknation28 2023 sample pack` (287 audio files, 209 MB). A **Jersey club / twerk** producer's
-working folder, not a curated library: loose vocal rips, clipped 808 kicks, bed squeaks, reloads, whip cracks,
+**Source:** `@twerknation28 2023 sample pack` (287 audio files, 209 MB). **Twerknation28 is a SoundCloud collective /
+channel at the centre of the 2021–23 "internet Jersey" (hyperflip / dariacore) wave** — see `recipes/GENRES.md`
+→ *Internet Jersey*. This is a working folder from that scene, not a curated library: loose vocal rips, clipped 808 kicks, bed squeaks, reloads, whip cracks,
 scratch fills, sirens. Everything normalized to 44.1k float32 stereo in `norm/`; features in `manifest.json`
 (`MANIFEST.md` for reading, `sheets/*.png` for looking).
 
@@ -130,15 +131,25 @@ Three long songs for mashup fodder: `twerk_hands_up_high` (83 s, 152, A#m), `yea
 - **Whips:** `id_whip_crack_fx` (clean), `gangsigns_whip`, `jacksepticeye_high_five` (comedy slap), `oh_no_lab_stem_part_6`
 - **Glitch:** `synplant_ui_glitch_part_83`, `swish_buzzer`, `errt`, `ls_fx_25`, `shop_fx_new_18`, `hilfiger_explosive_beep`
 
-## Lessons from the first renders (`demos/jersey01.py`)
+## Lessons from the first renders (`demos/jersey01.py`, `demos/jersey02.py`)
+- jersey01 used the *Baltimore* kick grammar (0,3,6,10,12). The Jersey 5-count is 0,4,8,11,14 (`idioms.JERSEY_KICK`).
 - Render 1: kick `id_night_club_808` untruncated on the 5-kick pattern = **+27 dB at 40 Hz vs pink**, flat bar
   energy, nothing else audible. Truncating to 0.45 beats, retuning +4 st and hp 28 on master fixed it
   (+17 dB at 50 Hz, arrangement range 6 dB). *Check `stems_report` before blaming the mix.*
-- pedalboard's `Limiter` is sample-peak; the renderer now trims to a true-peak ceiling (`master(true_peak_db=-1)`).
+- pedalboard's `Limiter` adds makeup gain and clips at 0 dBFS (it is a drive, not a ceiling). The renderer now uses its
+  own 4x-oversampled lookahead limiter (`render.true_peak_limit`); `master(limiter_db=-1)` is a real ceiling and the
+  console prints the max gain reduction — keep it under ~6 dB unless you want the crushed sound on purpose.
 - Surge patches differ wildly in level (`Basses/Bass 1` needed `gain_db=+10`); always read the stem LUFS line.
 - Onset "late bias" of ~8–12 ms is the kicks' slow attack, not a timing bug. Shift kicks earlier by
   `time -= 0.01*bpm/60` beats if a track needs to snap, or layer a click.
 - Vocal one-shots sit ~10 dB below the kick at equal track gain; the hook wants `gain=+3..+6` and a compressor.
+- A sidechained track gets *louder* when its source stops (breakdowns): intended, but plan levels for it.
+- `Track.chop(onset=True)` slices from `active_start` (lead-in silence skipped) using all detected onsets; pick `n`
+  or `onset=False` for equal slices. Check the loop's onset count in the manifest before writing a slice pattern.
+- Numpy synths (`Supersaw`, `Pad`) and Surge patches come out 10–20 dB quieter than samples: expect `gain=+3..+14`.
+- Read `*.arrangement.png` (stems × bars) before the spectrogram: it answers "which stem is holding this bar up".
+- Footwork agent (2026-10-04): `shake_it_down_loop_160`, `werk` (-12 st still clean), `childish_gambino_*_back`,
+  `2018_clap`, `kick031_2` hp 60 all shone; `snap_02` as a hat needs ~+16 dB; `purge_siren` gets lost under drums.
 
 ## Mix targets that worked here
 Kick stem -8..-10 LUFS, hook vocal -14..-17, claps -15, bass -18..-22, squeak/hats -19..-27, fx -20.

@@ -11,6 +11,7 @@ uv run python -m kitforge.feedback some.wav --bpm 138 --bars 16
 uv run python -m kitforge.surge bass                          # search Surge XT patches
 ```
 
+Genre idioms as code: `kitforge/idioms.py` (Jersey 5-count kick, chop melodies, vocal stacks, stutters, flips).
 Packs live in `packs/<slug>/` with a hand-written **`KIT.md`** — the pack's *hypervector of constraints*: what it
 has, what it lacks, what that forces. Start there. Genre priors: `recipes/GENRES.md`.
 
@@ -22,10 +23,11 @@ from kitforge.render import Song
 from kitforge.synth import Clip, Synth808, Supersaw, FMPluck, Pad, Riser, chord, scale
 from kitforge.surge import SurgeSynth, surge_fx, list_patches
 from kitforge.tricks import stutter, roll, pitch_ladder, P, gate, tape_stop, reverse_reverb, halfspeed, bitcrush
+from kitforge.idioms import jersey_kick, chop_melody, vocal_stack, velocity_stutter, stutter_delay, flip, crush, nightcore, JERSEY_KICK
 
 s = Song("twerknation28", bpm=138, bars=16, swing=50)           # swing 50 straight, 58-64 UKG, 66.7 triplet
 k = s.track("kick", gain=-2, choke=True)                          # choke: each hit cuts the previous
-k.pattern("x..x..x...x.x...", "kicks/id_night_club_808", bar=0, bars=16, dur_beats=0.45, pitch=4)
+k.pattern("x...x...x..x..x.", "kicks/id_night_club_808", bar=0, bars=16, dur_beats=0.45, pitch=4)  # Jersey 5-count
 c = s.track("clap", gain=-6, fx=[pb.Reverb(room_size=0.3, wet_level=0.1)])
 c.pattern("....x.......x...", "sfx/percs/2018_clap")              # repeats to the end of the song
 v = s.track("vox", gain=3, hp=180, fx=[pb.Compressor(threshold_db=-18, ratio=3)])
@@ -74,7 +76,7 @@ presence 2–5k / air>10k, dB vs pink), `third_oct_rel_pink`, `bar_rms_db`, `arr
 
 ## Layout
 ```
-kitforge/   ingest.py analyze.py render.py synth.py surge.py tricks.py mashup.py feedback.py
+kitforge/   ingest.py analyze.py render.py synth.py surge.py tricks.py idioms.py mashup.py feedback.py
 packs/<slug>/  KIT.md  MANIFEST.md  manifest.json  files.json  norm/  sheets/      (norm/ is gitignored)
 recipes/GENRES.md       demos/*.py -> demos/out/
 ```

@@ -53,6 +53,28 @@ def third_octave_rel_pink(mono: np.ndarray) -> list[float]:
     return list(np.round(out - np.median(out[4:20]), 1))  # relative to the 63Hz-2kHz median
 
 
+def third_octave_abs(mono: np.ndarray) -> list[float]:
+    """1/3-octave band energies in dB relative to pink at 0 dBFS RMS overall — comparable across stems."""
+    n = 1 << 15
+    S = np.zeros(n // 2 + 1)
+    hop = n // 2
+    w = np.hanning(n)
+    cnt = 0
+    for i in range(0, max(1, len(mono) - n), hop):
+        S += np.abs(np.fft.rfft(mono[i: i + n] * w)) ** 2
+        cnt += 1
+    S /= max(cnt, 1)
+    f = np.fft.rfftfreq(n, 1 / SR)
+    tot = S.sum() + 1e-12
+    out = []
+    for fc in THIRD_OCT:
+        lo, hi = fc / 2 ** (1 / 6), fc * 2 ** (1 / 6)
+        m = (f >= lo) & (f < hi)
+        p = S[m].sum() if m.any() else 1e-12
+        out.append(10 * math.log10(p / tot * len(THIRD_OCT) + 1e-12) + 20 * math.log10(np.sqrt(np.mean(mono ** 2)) + 1e-9))
+    return list(np.round(out, 1))
+
+
 def analyze(wav: Path, bpm: float | None, bars: int | None) -> dict:
     a, sr = sf.read(wav, dtype="float32", always_2d=True)
     assert sr == SR, sr
@@ -87,7 +109,7 @@ def analyze(wav: Path, bpm: float | None, bars: int | None) -> dict:
     r["third_oct_rel_pink"] = third_octave_rel_pink(mono)
     f3 = dict(zip(THIRD_OCT, r["third_oct_rel_pink"]))
     r["bands"] = {
-        "sub<60": round(float(np.mean([f3[25], f3[31.5], f3[40], f3[50]])), 1),
+        "sub<60": round(float(np.mean([f3[31.5], f3[40], f3[50]])), 1),  # 25 Hz excluded: the 28 Hz master hp owns it
         "kick 60-120": round(float(np.mean([f3[63], f3[80], f3[100]])), 1),
         "mud 200-400": round(float(np.mean([f3[200], f3[250], f3[315], f3[400]])), 1),
         "presence 2-5k": round(float(np.mean([f3[2000], f3[2500], f3[3150], f3[4000], f3[5000]])), 1),
@@ -105,12 +127,24 @@ def analyze(wav: Path, bpm: float | None, bars: int | None) -> dict:
         r["arrangement_range_db"] = round(max(per) - min(p for p in per if p > -60) if any(p > -60 for p in per) else 0, 1)
         # onsets vs 16th grid
         ons = librosa.onset.onset_detect(y=mono, sr=SR, units="time", hop_length=128, backtrack=False)
-        g = 60.0 / bpm / 4
-        dev = np.array([(o / g - round(o / g)) * g * 1000 for o in ons])
+        g16 = 60.0 / bpm / 4
+        grids = {"16": g16, "32": g16 / 2, "16t": g16 * 2 / 3}
+        dev16 = np.array([(o / g16 - round(o / g16)) * g16 * 1000 for o in ons])
+        # per onset: deviation from the finest grid it is closest to (so 32nds / triplets are not "errors")
+        best = []
+        which = []
+        for o in ons:
+            cands = {k: (o / g - round(o / g)) * g * 1000 for k, g in grids.items()}
+            k = min(cands, key=lambda k: abs(cands[k]))
+            best.append(cands[k])
+            which.append(k)
+        dev = np.array(best)
         r["onsets"] = int(len(ons))
+        r["onset_grid_share"] = {k: round(which.count(k) / max(1, len(which)), 2) for k in grids}
         r["onset_dev_ms"] = {"mean_abs": round(float(np.mean(np.abs(dev))), 1) if len(dev) else None,
                              "p90_abs": round(float(np.percentile(np.abs(dev), 90)), 1) if len(dev) else None,
-                             "late_bias": round(float(np.mean(dev)), 1) if len(dev) else None}
+                             "late_bias": round(float(np.mean(dev)), 1) if len(dev) else None,
+                             "note": "detector marks the energy peak, so slow-attack samples read late; see manifest attack_ms / Track.latency_ms"}
         r["_onsets"] = ons
         r["_dev"] = dev
     # flags
@@ -129,6 +163,8 @@ def analyze(wav: Path, bpm: float | None, bars: int | None) -> dict:
         flags.append("harsh 2-5k")
     if r["stereo_corr"] < 0.2:
         flags.append("stereo correlation low (mono compatibility)")
+    if r["stereo_corr"] > 0.98:
+        flags.append("effectively mono (corr > 0.98): pan, Haas, or widen something")
     if r.get("arrangement_range_db", 0) < 3 and (bars or 0) >= 16:
         flags.append("arrangement flat (<3 dB bar-to-bar range over 16+ bars)")
     r["flags"] = flags
@@ -241,19 +277,28 @@ if __name__ == "__main__":
     report(a.wav, a.bpm, a.bars)
 
 
-def stems_report(stems_dir: str | Path) -> list[dict]:
-    """Per-stem loudness, peak, centroid and 1/3-oct peaks: find which track owns a problem band."""
+def stems_report(stems_dir: str | Path, bpm: float | None = None, bars: int | None = None, heatmap_png: str | Path | None = None) -> list[dict]:
+    """Per-stem loudness, peak, centroid and the 1/3-oct bands where the stem is loudest IN ABSOLUTE terms (dB vs
+    pink, same reference as the mix), plus a stems x bars RMS matrix (and heatmap PNG) when bpm is given."""
     stems_dir = Path(stems_dir)
     rows = []
     meter = pyln.Meter(SR)
+    mats = []
+    names = []
     for w in sorted(stems_dir.glob("*.wav")):
         a, _ = sf.read(w, dtype="float32", always_2d=True)
         mono = a.mean(axis=1)
         if np.max(np.abs(mono)) < 1e-6:
             rows.append({"stem": w.stem, "silent": True})
             continue
-        third = third_octave_rel_pink(mono)
+        third = third_octave_abs(mono)
         peaks = sorted(zip(third, THIRD_OCT), reverse=True)[:3]
+        if bpm:
+            bar_s = 240.0 / bpm
+            nb = bars or int(len(mono) / (bar_s * SR))
+            per = [float(db(np.sqrt(np.mean(mono[int(b * bar_s * SR): int((b + 1) * bar_s * SR)] ** 2)) or 1e-9)) for b in range(nb)]
+            mats.append(per)
+            names.append(w.stem)
         C = librosa.feature.spectral_centroid(y=mono, sr=SR)[0]
         E = librosa.feature.rms(y=mono)[0]
         act = E > E.max() * 10 ** (-40 / 20)  # centroid over active frames only
@@ -264,12 +309,32 @@ def stems_report(stems_dir: str | Path) -> list[dict]:
             "peak_db": round(float(db(np.max(np.abs(a)))), 1),
             "centroid_hz": int(cent),
             "top_bands": [f"{int(f) if f >= 100 else f}Hz:{v:+.0f}" for v, f in peaks],
+            "bar_rms_db": mats[-1] if bpm else None,
         })
+    if bpm and mats and heatmap_png:
+        import matplotlib
+
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+
+        M = np.array(mats)
+        fig, ax = plt.subplots(figsize=(max(8, 0.35 * M.shape[1] + 3), 0.45 * len(names) + 1.5))
+        im = ax.imshow(M, aspect="auto", cmap="magma", vmin=-50, vmax=-6)
+        ax.set_yticks(range(len(names)))
+        ax.set_yticklabels(names, fontsize=8)
+        ax.set_xticks(range(M.shape[1]))
+        ax.set_xticklabels([str(i) for i in range(M.shape[1])], fontsize=7)
+        ax.set_xlabel("bar")
+        ax.set_title("arrangement: stem RMS per bar (dBFS, pre-master)", fontsize=9)
+        fig.colorbar(im, ax=ax, fraction=0.02)
+        fig.tight_layout()
+        fig.savefig(heatmap_png, dpi=100)
+        plt.close(fig)
     return rows
 
 
-def print_stems(stems_dir):
-    for r in stems_report(stems_dir):
+def print_stems(stems_dir, bpm=None, bars=None, heatmap_png=None):
+    for r in stems_report(stems_dir, bpm=bpm, bars=bars, heatmap_png=heatmap_png):
         if r.get("silent"):
             print(f"  {r['stem']:>10}: silent")
         else:

@@ -143,23 +143,25 @@ def stutter_delay(buf: np.ndarray, bpm: float, step: str = "16", repeats: int = 
     return out.astype(np.float32)
 
 
-def pitch_drop(buf: np.ndarray, at_s: float, semis: float = -12.0, length_s: float = 0.25) -> np.ndarray:
-    """Quick pitch drop at a transition: the audio after at_s is read with a speed ramp 1 -> 2^(semis/12) over length_s."""
+def pitch_drop(buf: np.ndarray, at_s: float, semis: float = -12.0, length_s: float = 0.25, hold_s: float = 0.0) -> np.ndarray:
+    """Quick pitch drop at a transition: for length_s after at_s the audio is read with a speed ramp
+    1 -> 2^(semis/12) (then held hold_s at that speed and faded); afterwards the original continues untouched."""
     s0 = int(at_s * SR)
-    seg = buf[s0:]
-    if len(seg) < 10:
+    ramp, hold = int(length_s * SR), int(hold_s * SR)
+    n_win = ramp + hold
+    if s0 >= len(buf) - 10:
         return buf
-    n = len(seg)
-    ramp = int(length_s * SR)
     target = 2 ** (semis / 12)
-    speed = np.concatenate([np.linspace(1.0, target, min(ramp, n)), np.full(max(0, n - ramp), target)])
+    speed = np.concatenate([np.linspace(1.0, target, ramp), np.full(hold, target)])
     pos = np.cumsum(speed)
-    pos = pos[pos < n - 1]
+    seg = buf[s0:]
+    pos = pos[pos < len(seg) - 1]
     i = pos.astype(int)
     f = (pos - i)[:, None]
     res = seg[i] * (1 - f) + seg[i + 1] * f
+    if hold:
+        res[ramp:] *= np.linspace(1, 0, len(res) - ramp)[:, None]
     out = buf.copy()
-    out[s0:] = 0
     out[s0: s0 + len(res)] = res
     return out
 

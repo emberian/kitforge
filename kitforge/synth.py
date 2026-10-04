@@ -3,8 +3,8 @@
     from kitforge.synth import Clip, Synth808, Supersaw, FMPluck, Pad, Riser, chord, scale
     c = Clip()
     c.note("F1", bar=0, beat=0, dur=1.5, vel=1.0, glide_from="A1")      # 808 slide
-    c.chord(chord("Fm7"), bar=0, beat=0, dur=4, octave=3)
-    track.clip(c, Synth808(drive=6))                                     # renders into the song
+    c.chord(chord("Fm7", octave=3), bar=0, beat=0, dur=4)
+    track.clip(c, Synth808(drive_db=6))                                  # renders into the song
 
 Instruments are callables: inst(freq_hz, dur_s, vel, glide_from_hz=None) -> (n,2) float32 at SR.
 All envelopes in seconds. Keep instruments pure so Opuses can write new ones in a few lines.
@@ -291,9 +291,9 @@ class Clip:
         self.notes.append(Note(note_to_midi(n), t, dur, vel, note_to_midi(glide_from) if glide_from is not None else None))
         return self
 
-    def chord(self, notes: list, bar: int = 0, beat: float = 0.0, dur: float = 4.0, vel: float = 1.0, strum: float = 0.0) -> "Clip":
+    def chord(self, notes: list, bar: int = 0, beat: float = 0.0, dur: float = 4.0, vel: float = 1.0, strum: float = 0.0, time=None) -> "Clip":
         for i, n in enumerate(notes):
-            self.note(n, bar, beat + i * strum, dur, vel)
+            self.note(n, bar, beat + i * strum, dur, vel, time=(time + i * strum) if time is not None else None)
         return self
 
     def seq(self, notes: list, step: float = 0.25, bar: int = 0, beat: float = 0.0, dur: float | None = None, vel: float = 1.0) -> "Clip":
