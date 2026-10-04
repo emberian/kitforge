@@ -1,0 +1,4024 @@
+{
+ "source": "/Users/ember/Downloads/@twerknation28 2023 sample pack",
+ "slug": "twerknation28",
+ "files": {
+  "kicks/808_15": {
+   "id": "kicks/808_15",
+   "category": "kicks",
+   "original": "kicks/808_15.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/kicks/808_15.wav",
+   "norm": "norm/kicks/808_15.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.461542
+   }
+  },
+  "kicks/ace_bass_kick_908_boom_kick_2": {
+   "id": "kicks/ace_bass_kick_908_boom_kick_2",
+   "category": "kicks",
+   "original": "kicks/Ace Bass Kick 908 + boom kick_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/kicks/Ace Bass Kick 908 + boom kick_2.wav",
+   "norm": "norm/kicks/ace_bass_kick_908_boom_kick_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.4861
+   }
+  },
+  "kicks/bass_h_1_1": {
+   "id": "kicks/bass_h_1_1",
+   "category": "kicks",
+   "original": "kicks/Bass H - 1 - 1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/kicks/Bass H - 1 - 1.wav",
+   "norm": "norm/kicks/bass_h_1_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.447755
+   }
+  },
+  "kicks/global_kick_3_2": {
+   "id": "kicks/global_kick_3_2",
+   "category": "kicks",
+   "original": "kicks/Global Kick 3_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/kicks/Global Kick 3_2.wav",
+   "norm": "norm/kicks/global_kick_3_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.461927
+   }
+  },
+  "kicks/id_night_club_808": {
+   "id": "kicks/id_night_club_808",
+   "category": "kicks",
+   "original": "kicks/ID - Night Club ( 808 ).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/kicks/ID - Night Club ( 808 ).wav",
+   "norm": "norm/kicks/id_night_club_808.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.501837
+   }
+  },
+  "kicks/mingo_idk_808_2": {
+   "id": "kicks/mingo_idk_808_2",
+   "category": "kicks",
+   "original": "kicks/Mingo - idk 808_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/kicks/Mingo - idk 808_2.wav",
+   "norm": "norm/kicks/mingo_idk_808_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 1.154036
+   }
+  },
+  "kicks/vybe_kick_1_1_part_1": {
+   "id": "kicks/vybe_kick_1_1_part_1",
+   "category": "kicks",
+   "original": "kicks/Vybe KICK !! - 1 - 1 - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/kicks/Vybe KICK !! - 1 - 1 - Part_1.wav",
+   "norm": "norm/kicks/vybe_kick_1_1_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.471701
+   }
+  },
+  "kicks/elephant_kick_2": {
+   "id": "kicks/elephant_kick_2",
+   "category": "kicks",
+   "original": "kicks/elephant kick 2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/kicks/elephant kick 2.wav",
+   "norm": "norm/kicks/elephant_kick_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.618549
+   }
+  },
+  "kicks/elephant_kick_clipped": {
+   "id": "kicks/elephant_kick_clipped",
+   "category": "kicks",
+   "original": "kicks/elephant kick clipped.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/kicks/elephant kick clipped.wav",
+   "norm": "norm/kicks/elephant_kick_clipped.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.159796
+   }
+  },
+  "kicks/henry_kick": {
+   "id": "kicks/henry_kick",
+   "category": "kicks",
+   "original": "kicks/henry kick.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/kicks/henry kick.wav",
+   "norm": "norm/kicks/henry_kick.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.648639
+   }
+  },
+  "kicks/kick031_2": {
+   "id": "kicks/kick031_2",
+   "category": "kicks",
+   "original": "kicks/kick031_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/kicks/kick031_2.wav",
+   "norm": "norm/kicks/kick031_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.469546
+   }
+  },
+  "root/love_and_affection_100bpm_elxnce_preview_tool": {
+   "id": "root/love_and_affection_100bpm_elxnce_preview_tool",
+   "category": "root",
+   "original": "love and affection 100bpm @elxnce (preview tool).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/love and affection 100bpm @elxnce (preview tool).wav",
+   "norm": "norm/root/love_and_affection_100bpm_elxnce_preview_tool.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 105.6
+   }
+  },
+  "sfx/perc_loops/b_goodie_whip_loop": {
+   "id": "sfx/perc_loops/b_goodie_whip_loop",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/B Goodie Whip Loop.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/B Goodie Whip Loop.wav",
+   "norm": "norm/sfx/perc_loops/b_goodie_whip_loop.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 10.710204
+   }
+  },
+  "sfx/perc_loops/bomb_synth": {
+   "id": "sfx/perc_loops/bomb_synth",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/Bomb Synth.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/Bomb Synth.wav",
+   "norm": "norm/sfx/perc_loops/bomb_synth.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 27.746372
+   }
+  },
+  "sfx/perc_loops/butt_clap_2": {
+   "id": "sfx/perc_loops/butt_clap_2",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/Butt_Clap_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/Butt_Clap_2.wav",
+   "norm": "norm/sfx/perc_loops/butt_clap_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 7.058821
+   }
+  },
+  "sfx/perc_loops/damage_reload_loop": {
+   "id": "sfx/perc_loops/damage_reload_loop",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/DAMAGE RELOAD LOOP.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/DAMAGE RELOAD LOOP.wav",
+   "norm": "norm/sfx/perc_loops/damage_reload_loop.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 5.217392
+   }
+  },
+  "sfx/perc_loops/hilfiger_syko_scratch_loop_tellztheproducer": {
+   "id": "sfx/perc_loops/hilfiger_syko_scratch_loop_tellztheproducer",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/Hilfiger Syko Scratch Loop (TellzTheProducer).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/Hilfiger Syko Scratch Loop (TellzTheProducer).wav",
+   "norm": "norm/sfx/perc_loops/hilfiger_syko_scratch_loop_tellztheproducer.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 6.404172
+   }
+  },
+  "sfx/perc_loops/hilfiger_syko_scratch_loop_tellztheproducer_2": {
+   "id": "sfx/perc_loops/hilfiger_syko_scratch_loop_tellztheproducer_2",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/Hilfiger Syko Scratch Loop (TellzTheProducer)_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/Hilfiger Syko Scratch Loop (TellzTheProducer)_2.wav",
+   "norm": "norm/sfx/perc_loops/hilfiger_syko_scratch_loop_tellztheproducer_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 7.389433
+   }
+  },
+  "sfx/perc_loops/hilfigers_snare_and_ahh_loop_tellztheproducer": {
+   "id": "sfx/perc_loops/hilfigers_snare_and_ahh_loop_tellztheproducer",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/Hilfigers Snare And Ahh Loop (TellzTheProducer).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/Hilfigers Snare And Ahh Loop (TellzTheProducer).wav",
+   "norm": "norm/sfx/perc_loops/hilfigers_snare_and_ahh_loop_tellztheproducer.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 12.812494
+   }
+  },
+  "sfx/perc_loops/march": {
+   "id": "sfx/perc_loops/march",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/March.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/March.wav",
+   "norm": "norm/sfx/perc_loops/march.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 14.328345
+   }
+  },
+  "sfx/perc_loops/reese_back_it_up_loop": {
+   "id": "sfx/perc_loops/reese_back_it_up_loop",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/Reese Back It Up Loop.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/Reese Back It Up Loop.wav",
+   "norm": "norm/sfx/perc_loops/reese_back_it_up_loop.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 9.6
+   }
+  },
+  "sfx/perc_loops/slap_chopped_1": {
+   "id": "sfx/perc_loops/slap_chopped_1",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/Slap - Chopped 1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/Slap - Chopped 1.wav",
+   "norm": "norm/sfx/perc_loops/slap_chopped_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 7.209796
+   }
+  },
+  "sfx/perc_loops/tick_tock": {
+   "id": "sfx/perc_loops/tick_tock",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/Tick_Tock.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/Tick_Tock.wav",
+   "norm": "norm/sfx/perc_loops/tick_tock.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 4.000862
+   }
+  },
+  "sfx/perc_loops/aye_aye_loop": {
+   "id": "sfx/perc_loops/aye_aye_loop",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/aye aye loop.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/aye aye loop.wav",
+   "norm": "norm/sfx/perc_loops/aye_aye_loop.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 25.652245
+   }
+  },
+  "sfx/perc_loops/best_i_ever_had_loop_155bpm": {
+   "id": "sfx/perc_loops/best_i_ever_had_loop_155bpm",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/best i ever had loop 155bpm.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/best i ever had loop 155bpm.wav",
+   "norm": "norm/sfx/perc_loops/best_i_ever_had_loop_155bpm.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 12.387098
+   }
+  },
+  "sfx/perc_loops/bite_into_loop_137bpm": {
+   "id": "sfx/perc_loops/bite_into_loop_137bpm",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/bite into loop 137bpm.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/bite into loop 137bpm.wav",
+   "norm": "norm/sfx/perc_loops/bite_into_loop_137bpm.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 14.014603
+   }
+  },
+  "sfx/perc_loops/bubble_break": {
+   "id": "sfx/perc_loops/bubble_break",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/bubble break.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/bubble break.mp3",
+   "norm": "norm/sfx/perc_loops/bubble_break.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 14.371344
+   }
+  },
+  "sfx/perc_loops/crack": {
+   "id": "sfx/perc_loops/crack",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/crack.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/crack.wav",
+   "norm": "norm/sfx/perc_loops/crack.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 38.4
+   }
+  },
+  "sfx/perc_loops/dreams_loop_160bpm": {
+   "id": "sfx/perc_loops/dreams_loop_160bpm",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/dreams loop 160bpm.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/dreams loop 160bpm.wav",
+   "norm": "norm/sfx/perc_loops/dreams_loop_160bpm.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 12.0
+   }
+  },
+  "sfx/perc_loops/elephant_man_dialtone_loop_194bpm": {
+   "id": "sfx/perc_loops/elephant_man_dialtone_loop_194bpm",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/elephant_man_dialtone_loop_194bpm.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/elephant_man_dialtone_loop_194bpm.wav",
+   "norm": "norm/sfx/perc_loops/elephant_man_dialtone_loop_194bpm.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 9.896916
+   }
+  },
+  "sfx/perc_loops/everybody_loop_138bpm": {
+   "id": "sfx/perc_loops/everybody_loop_138bpm",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/everybody loop 138bpm.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/everybody loop 138bpm.wav",
+   "norm": "norm/sfx/perc_loops/everybody_loop_138bpm.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 13.913039
+   }
+  },
+  "sfx/perc_loops/hat_break_break": {
+   "id": "sfx/perc_loops/hat_break_break",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/hat break (break).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/hat break (break).wav",
+   "norm": "norm/sfx/perc_loops/hat_break_break.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.919792
+   }
+  },
+  "sfx/perc_loops/loop_1": {
+   "id": "sfx/perc_loops/loop_1",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/loop 1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/loop 1.wav",
+   "norm": "norm/sfx/perc_loops/loop_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 10.101973
+   }
+  },
+  "sfx/perc_loops/opera_hihat_loop_140bpm": {
+   "id": "sfx/perc_loops/opera_hihat_loop_140bpm",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/opera hihat loop - 140bpm.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/opera hihat loop - 140bpm.wav",
+   "norm": "norm/sfx/perc_loops/opera_hihat_loop_140bpm.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 6.857143
+   }
+  },
+  "sfx/perc_loops/rocking_sample_loop": {
+   "id": "sfx/perc_loops/rocking_sample_loop",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/rocking sample loop.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/rocking sample loop.wav",
+   "norm": "norm/sfx/perc_loops/rocking_sample_loop.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 5.065782
+   }
+  },
+  "sfx/perc_loops/tajdrums_isolated_150": {
+   "id": "sfx/perc_loops/tajdrums_isolated_150",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/tajdrums_isolated_150.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/tajdrums_isolated_150.wav",
+   "norm": "norm/sfx/perc_loops/tajdrums_isolated_150.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 3.2
+   }
+  },
+  "sfx/perc_loops/wishyouwell_loop_188bpm": {
+   "id": "sfx/perc_loops/wishyouwell_loop_188bpm",
+   "category": "sfx/perc_loops",
+   "original": "sfx/perc loops/wishyouwell loop 188bpm.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/perc loops/wishyouwell loop 188bpm.wav",
+   "norm": "norm/sfx/perc_loops/wishyouwell_loop_188bpm.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 10.212766
+   }
+  },
+  "sfx/percs/2018_clap": {
+   "id": "sfx/percs/2018_clap",
+   "category": "sfx/percs",
+   "original": "sfx/percs/2018 clap.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/2018 clap.wav",
+   "norm": "norm/sfx/percs/2018_clap.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.101066
+   }
+  },
+  "sfx/percs/breeze_hat_official": {
+   "id": "sfx/percs/breeze_hat_official",
+   "category": "sfx/percs",
+   "original": "sfx/percs/Breeze Hat ( Official ) .mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/Breeze Hat ( Official ) .mp3",
+   "norm": "norm/sfx/percs/breeze_hat_official.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 1.545219
+   }
+  },
+  "sfx/percs/hilfigers_snare_and_ahh_loop_tellztheproducer_2_part_1": {
+   "id": "sfx/percs/hilfigers_snare_and_ahh_loop_tellztheproducer_2_part_1",
+   "category": "sfx/percs",
+   "original": "sfx/percs/Hilfigers Snare And Ahh Loop (TellzTheProducer)_2 - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/Hilfigers Snare And Ahh Loop (TellzTheProducer)_2 - Part_1.wav",
+   "norm": "norm/sfx/percs/hilfigers_snare_and_ahh_loop_tellztheproducer_2_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.6
+   }
+  },
+  "sfx/percs/id_finger_snap_perc": {
+   "id": "sfx/percs/id_finger_snap_perc",
+   "category": "sfx/percs",
+   "original": "sfx/percs/ID - Finger Snap ( Perc ).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/ID - Finger Snap ( Perc ).wav",
+   "norm": "norm/sfx/percs/id_finger_snap_perc.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.857143
+   }
+  },
+  "sfx/percs/opera_s_hihat_loop_part_2": {
+   "id": "sfx/percs/opera_s_hihat_loop_part_2",
+   "category": "sfx/percs",
+   "original": "sfx/percs/Opera's HiHat Loop - Part_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/Opera's HiHat Loop - Part_2.wav",
+   "norm": "norm/sfx/percs/opera_s_hihat_loop_part_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.263311
+   }
+  },
+  "sfx/percs/shop_fx_new_18": {
+   "id": "sfx/percs/shop_fx_new_18",
+   "category": "sfx/percs",
+   "original": "sfx/percs/SHOP-FX-NEW-18.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/SHOP-FX-NEW-18.mp3",
+   "norm": "norm/sfx/percs/shop_fx_new_18.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.862063
+   }
+  },
+  "sfx/percs/snap_01": {
+   "id": "sfx/percs/snap_01",
+   "category": "sfx/percs",
+   "original": "sfx/percs/Snap_01.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/Snap_01.wav",
+   "norm": "norm/sfx/percs/snap_01.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 0.357642
+   }
+  },
+  "sfx/percs/snap_02": {
+   "id": "sfx/percs/snap_02",
+   "category": "sfx/percs",
+   "original": "sfx/percs/Snap_02.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/Snap_02.wav",
+   "norm": "norm/sfx/percs/snap_02.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 0.172585
+   }
+  },
+  "sfx/percs/snap_03": {
+   "id": "sfx/percs/snap_03",
+   "category": "sfx/percs",
+   "original": "sfx/percs/Snap_03.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/Snap_03.wav",
+   "norm": "norm/sfx/percs/snap_03.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 0.836735
+   }
+  },
+  "sfx/percs/snap_04": {
+   "id": "sfx/percs/snap_04",
+   "category": "sfx/percs",
+   "original": "sfx/percs/Snap_04.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/Snap_04.wav",
+   "norm": "norm/sfx/percs/snap_04.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 0.42
+   }
+  },
+  "sfx/percs/sound_29": {
+   "id": "sfx/percs/sound_29",
+   "category": "sfx/percs",
+   "original": "sfx/percs/Sound 29.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/Sound 29.wav",
+   "norm": "norm/sfx/percs/sound_29.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.079841
+   }
+  },
+  "sfx/percs/tellz_e_finger_snap_2": {
+   "id": "sfx/percs/tellz_e_finger_snap_2",
+   "category": "sfx/percs",
+   "original": "sfx/percs/Tellz_-_E_Finger_Snap_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/Tellz_-_E_Finger_Snap_2.wav",
+   "norm": "norm/sfx/percs/tellz_e_finger_snap_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 2.142857
+   }
+  },
+  "sfx/percs/woop_clap": {
+   "id": "sfx/percs/woop_clap",
+   "category": "sfx/percs",
+   "original": "sfx/percs/Woop_Clap.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/Woop_Clap.wav",
+   "norm": "norm/sfx/percs/woop_clap.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 0.351723
+   }
+  },
+  "sfx/percs/bubbles": {
+   "id": "sfx/percs/bubbles",
+   "category": "sfx/percs",
+   "original": "sfx/percs/bubbles.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/bubbles.wav",
+   "norm": "norm/sfx/percs/bubbles.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.220794
+   }
+  },
+  "sfx/percs/c4_tick_tick_part_1": {
+   "id": "sfx/percs/c4_tick_tick_part_1",
+   "category": "sfx/percs",
+   "original": "sfx/percs/c4 tick tick - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/c4 tick tick - Part_1.wav",
+   "norm": "norm/sfx/percs/c4_tick_tick_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.382268
+   }
+  },
+  "sfx/percs/chimes_chimes": {
+   "id": "sfx/percs/chimes_chimes",
+   "category": "sfx/percs",
+   "original": "sfx/percs/chimes_chimes.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/chimes_chimes.wav",
+   "norm": "norm/sfx/percs/chimes_chimes.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 24,
+    "duration": 13.714271
+   }
+  },
+  "sfx/percs/errt": {
+   "id": "sfx/percs/errt",
+   "category": "sfx/percs",
+   "original": "sfx/percs/errt.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/errt.wav",
+   "norm": "norm/sfx/percs/errt.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.601859
+   }
+  },
+  "sfx/percs/fills/bed_squeak_loop_big_o_11": {
+   "id": "sfx/percs/fills/bed_squeak_loop_big_o_11",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/Bed Squeak Loop ( Big O )_11.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/Bed Squeak Loop ( Big O )_11.wav",
+   "norm": "norm/sfx/percs/fills/bed_squeak_loop_big_o_11.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.160862
+   }
+  },
+  "sfx/percs/fills/bed_squeak_loop_big_o_12": {
+   "id": "sfx/percs/fills/bed_squeak_loop_big_o_12",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/Bed Squeak Loop ( Big O )_12.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/Bed Squeak Loop ( Big O )_12.wav",
+   "norm": "norm/sfx/percs/fills/bed_squeak_loop_big_o_12.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.170454
+   }
+  },
+  "sfx/percs/fills/bomb_chopped": {
+   "id": "sfx/percs/fills/bomb_chopped",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/Bomb Chopped.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/Bomb Chopped.mp3",
+   "norm": "norm/sfx/percs/fills/bomb_chopped.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.787688
+   }
+  },
+  "sfx/percs/fills/dj_puzzle_scratch_10": {
+   "id": "sfx/percs/fills/dj_puzzle_scratch_10",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/Dj_Puzzle_Scratch_10.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/Dj_Puzzle_Scratch_10.wav",
+   "norm": "norm/sfx/percs/fills/dj_puzzle_scratch_10.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.297415
+   }
+  },
+  "sfx/percs/fills/hilfiger_explosive_beep_sample_tellztheproducer": {
+   "id": "sfx/percs/fills/hilfiger_explosive_beep_sample_tellztheproducer",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/Hilfiger Explosive Beep Sample (TellzTheProducer).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/Hilfiger Explosive Beep Sample (TellzTheProducer).wav",
+   "norm": "norm/sfx/percs/fills/hilfiger_explosive_beep_sample_tellztheproducer.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 22050,
+    "channels": 1,
+    "bits": 16,
+    "duration": 0.929841
+   }
+  },
+  "sfx/percs/fills/hold_up_fill": {
+   "id": "sfx/percs/fills/hold_up_fill",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/Hold up Fill.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/Hold up Fill.wav",
+   "norm": "norm/sfx/percs/fills/hold_up_fill.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 1.490385
+   }
+  },
+  "sfx/percs/fills/hydrolic_sample_2": {
+   "id": "sfx/percs/fills/hydrolic_sample_2",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/Hydrolic Sample_2.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/Hydrolic Sample_2.mp3",
+   "norm": "norm/sfx/percs/fills/hydrolic_sample_2.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.441723
+   }
+  },
+  "sfx/percs/fills/id_scratch_perc": {
+   "id": "sfx/percs/fills/id_scratch_perc",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/ID\u2006- Scratch ( Perc ).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/ID\u2006- Scratch ( Perc ).wav",
+   "norm": "norm/sfx/percs/fills/id_scratch_perc.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.186531
+   }
+  },
+  "sfx/percs/fills/lituation_pt_2_1_part_7": {
+   "id": "sfx/percs/fills/lituation_pt_2_1_part_7",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/Lituation_pt.2_1 - Part_7.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/Lituation_pt.2_1 - Part_7.wav",
+   "norm": "norm/sfx/percs/fills/lituation_pt_2_1_part_7.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.711542
+   }
+  },
+  "sfx/percs/fills/perc_roll": {
+   "id": "sfx/percs/fills/perc_roll",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/Perc_Roll.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/Perc_Roll.wav",
+   "norm": "norm/sfx/percs/fills/perc_roll.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 0.705896
+   }
+  },
+  "sfx/percs/fills/rock_it_scratch": {
+   "id": "sfx/percs/fills/rock_it_scratch",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/Rock it Scratch.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/Rock it Scratch.wav",
+   "norm": "norm/sfx/percs/fills/rock_it_scratch.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.917891
+   }
+  },
+  "sfx/percs/fills/scratch_007_1_1": {
+   "id": "sfx/percs/fills/scratch_007_1_1",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/SCRATCH_007_-_1_-_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/SCRATCH_007_-_1_-_1.wav",
+   "norm": "norm/sfx/percs/fills/scratch_007_1_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 1,
+    "bits": 16,
+    "duration": 0.185102
+   }
+  },
+  "sfx/percs/fills/scratch_3": {
+   "id": "sfx/percs/fills/scratch_3",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/Scratch_3.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/Scratch_3.wav",
+   "norm": "norm/sfx/percs/fills/scratch_3.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 1,
+    "bits": 16,
+    "duration": 0.210068
+   }
+  },
+  "sfx/percs/fills/syko_scratch": {
+   "id": "sfx/percs/fills/syko_scratch",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/Syko Scratch.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/Syko Scratch.wav",
+   "norm": "norm/sfx/percs/fills/syko_scratch.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.896667
+   }
+  },
+  "sfx/percs/fills/bass_paning000": {
+   "id": "sfx/percs/fills/bass_paning000",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/bass paning000.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/bass paning000.wav",
+   "norm": "norm/sfx/percs/fills/bass_paning000.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.73
+   }
+  },
+  "sfx/percs/fills/galil_boltpull": {
+   "id": "sfx/percs/fills/galil_boltpull",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/galil boltpull.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/galil boltpull.mp3",
+   "norm": "norm/sfx/percs/fills/galil_boltpull.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.395844
+   }
+  },
+  "sfx/percs/fills/lituation_reload": {
+   "id": "sfx/percs/fills/lituation_reload",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/lituation reload.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/lituation reload.wav",
+   "norm": "norm/sfx/percs/fills/lituation_reload.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.346145
+   }
+  },
+  "sfx/percs/fills/m3_pump": {
+   "id": "sfx/percs/fills/m3_pump",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/m3_pump.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/m3_pump.wav",
+   "norm": "norm/sfx/percs/fills/m3_pump.wav",
+   "orig_format": {
+    "codec": "pcm_u8",
+    "sr": 22050,
+    "channels": 1,
+    "bits": 8,
+    "duration": 0.357642
+   }
+  },
+  "sfx/percs/fills/reload_2": {
+   "id": "sfx/percs/fills/reload_2",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/reload 2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/reload 2.wav",
+   "norm": "norm/sfx/percs/fills/reload_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.365374
+   }
+  },
+  "sfx/percs/fills/reload": {
+   "id": "sfx/percs/fills/reload",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/reload.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/reload.wav",
+   "norm": "norm/sfx/percs/fills/reload.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.374989
+   }
+  },
+  "sfx/percs/fills/scratch001": {
+   "id": "sfx/percs/fills/scratch001",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/scratch001.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/scratch001.wav",
+   "norm": "norm/sfx/percs/fills/scratch001.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 1,
+    "bits": 16,
+    "duration": 0.211882
+   }
+  },
+  "sfx/percs/fills/scratch4": {
+   "id": "sfx/percs/fills/scratch4",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/scratch4.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/scratch4.wav",
+   "norm": "norm/sfx/percs/fills/scratch4.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.17229
+   }
+  },
+  "sfx/percs/fills/swish_buzzer": {
+   "id": "sfx/percs/fills/swish_buzzer",
+   "category": "sfx/percs/fills",
+   "original": "sfx/percs/fills/swish_buzzer.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/fills/swish_buzzer.wav",
+   "norm": "norm/sfx/percs/fills/swish_buzzer.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.759909
+   }
+  },
+  "sfx/percs/gg_perc_ny_in_june": {
+   "id": "sfx/percs/gg_perc_ny_in_june",
+   "category": "sfx/percs",
+   "original": "sfx/percs/gg_-_perc_-_ny_in_june.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/gg_-_perc_-_ny_in_june.wav",
+   "norm": "norm/sfx/percs/gg_perc_ny_in_june.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 1.618413
+   }
+  },
+  "sfx/percs/impacts/ab_pre_drop_49": {
+   "id": "sfx/percs/impacts/ab_pre_drop_49",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/AB Pre Drop_49.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/AB Pre Drop_49.wav",
+   "norm": "norm/sfx/percs/impacts/ab_pre_drop_49.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.560045
+   }
+  },
+  "sfx/percs/impacts/bass_d_town_1": {
+   "id": "sfx/percs/impacts/bass_d_town_1",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/BASS - D-TOWN (1).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/BASS - D-TOWN (1).wav",
+   "norm": "norm/sfx/percs/impacts/bass_d_town_1.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.628912
+   }
+  },
+  "sfx/percs/impacts/bass_w": {
+   "id": "sfx/percs/impacts/bass_w",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/Bass_W.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/Bass_W.wav",
+   "norm": "norm/sfx/percs/impacts/bass_w.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 3.582063
+   }
+  },
+  "sfx/percs/impacts/bomb_kick_2": {
+   "id": "sfx/percs/impacts/bomb_kick_2",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/Bomb Kick_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/Bomb Kick_2.wav",
+   "norm": "norm/sfx/percs/impacts/bomb_kick_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.82
+   }
+  },
+  "sfx/percs/impacts/fx_21": {
+   "id": "sfx/percs/impacts/fx_21",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/FX_21.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/FX_21.wav",
+   "norm": "norm/sfx/percs/impacts/fx_21.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 1,
+    "bits": 16,
+    "duration": 1.026463
+   }
+  },
+  "sfx/percs/impacts/groove_sample": {
+   "id": "sfx/percs/impacts/groove_sample",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/Groove_Sample.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/Groove_Sample.wav",
+   "norm": "norm/sfx/percs/impacts/groove_sample.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.869524
+   }
+  },
+  "sfx/percs/impacts/jc_perc_06_consolidated": {
+   "id": "sfx/percs/impacts/jc_perc_06_consolidated",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/JC_PERC_06 (consolidated).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/JC_PERC_06 (consolidated).wav",
+   "norm": "norm/sfx/percs/impacts/jc_perc_06_consolidated.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 6.854172
+   }
+  },
+  "sfx/percs/impacts/lituation_pt_2_1_part_1": {
+   "id": "sfx/percs/impacts/lituation_pt_2_1_part_1",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/Lituation_pt.2_1 - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/Lituation_pt.2_1 - Part_1.wav",
+   "norm": "norm/sfx/percs/impacts/lituation_pt_2_1_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.499909
+   }
+  },
+  "sfx/percs/impacts/purge_siren": {
+   "id": "sfx/percs/impacts/purge_siren",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/PURGE SIREN.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/PURGE SIREN.mp3",
+   "norm": "norm/sfx/percs/impacts/purge_siren.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 3.844
+   }
+  },
+  "sfx/percs/impacts/rocking_sample_echo": {
+   "id": "sfx/percs/impacts/rocking_sample_echo",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/Rocking_Sample_Echo.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/Rocking_Sample_Echo.wav",
+   "norm": "norm/sfx/percs/impacts/rocking_sample_echo.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 2.719819
+   }
+  },
+  "sfx/percs/impacts/stomptom": {
+   "id": "sfx/percs/impacts/stomptom",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/Stomptom.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/Stomptom.wav",
+   "norm": "norm/sfx/percs/impacts/stomptom.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.326916
+   }
+  },
+  "sfx/percs/impacts/thunder_effect": {
+   "id": "sfx/percs/impacts/thunder_effect",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/Thunder Effect.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/Thunder Effect.mp3",
+   "norm": "norm/sfx/percs/impacts/thunder_effect.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 7.057063
+   }
+  },
+  "sfx/percs/impacts/waka_kick_edited_41_1_1": {
+   "id": "sfx/percs/impacts/waka_kick_edited_41_1_1",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/Waka KICK Edited (41) - 1 - 1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/Waka KICK Edited (41) - 1 - 1.wav",
+   "norm": "norm/sfx/percs/impacts/waka_kick_edited_41_1_1.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.760317
+   }
+  },
+  "sfx/percs/impacts/wave_out_kick_edit": {
+   "id": "sfx/percs/impacts/wave_out_kick_edit",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/Wave Out [ Kick Edit ].wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/Wave Out [ Kick Edit ].wav",
+   "norm": "norm/sfx/percs/impacts/wave_out_kick_edit.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.790068
+   }
+  },
+  "sfx/percs/impacts/bleechers_kick": {
+   "id": "sfx/percs/impacts/bleechers_kick",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/bleechers kick.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/bleechers kick.wav",
+   "norm": "norm/sfx/percs/impacts/bleechers_kick.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.940408
+   }
+  },
+  "sfx/percs/impacts/bomb_160": {
+   "id": "sfx/percs/impacts/bomb_160",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/bomb 160.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/bomb 160.wav",
+   "norm": "norm/sfx/percs/impacts/bomb_160.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 2.930635
+   }
+  },
+  "sfx/percs/impacts/boom": {
+   "id": "sfx/percs/impacts/boom",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/boom.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/boom.mp3",
+   "norm": "norm/sfx/percs/impacts/boom.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.52245
+   }
+  },
+  "sfx/percs/impacts/galil_2": {
+   "id": "sfx/percs/impacts/galil_2",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/galil-2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/galil-2.wav",
+   "norm": "norm/sfx/percs/impacts/galil_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 22050,
+    "channels": 1,
+    "bits": 16,
+    "duration": 1.62449
+   }
+  },
+  "sfx/percs/impacts/thunder": {
+   "id": "sfx/percs/impacts/thunder",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/thunder.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/thunder.wav",
+   "norm": "norm/sfx/percs/impacts/thunder.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.628798
+   }
+  },
+  "sfx/percs/impacts/usp1": {
+   "id": "sfx/percs/impacts/usp1",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/usp1.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/usp1.mp3",
+   "norm": "norm/sfx/percs/impacts/usp1.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 22050,
+    "channels": 1,
+    "bits": null,
+    "duration": 0.711202
+   }
+  },
+  "sfx/percs/impacts/zoom_drops_part_1": {
+   "id": "sfx/percs/impacts/zoom_drops_part_1",
+   "category": "sfx/percs/impacts",
+   "original": "sfx/percs/impacts/zoom drops - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/impacts/zoom drops - Part_1.wav",
+   "norm": "norm/sfx/percs/impacts/zoom_drops_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.28102
+   }
+  },
+  "sfx/percs/indian_bell": {
+   "id": "sfx/percs/indian_bell",
+   "category": "sfx/percs",
+   "original": "sfx/percs/indian_bell.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/indian_bell.wav",
+   "norm": "norm/sfx/percs/indian_bell.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.848209
+   }
+  },
+  "sfx/percs/japanese": {
+   "id": "sfx/percs/japanese",
+   "category": "sfx/percs",
+   "original": "sfx/percs/japanese.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/japanese.wav",
+   "norm": "norm/sfx/percs/japanese.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 2.629819
+   }
+  },
+  "sfx/percs/lex_clap": {
+   "id": "sfx/percs/lex_clap",
+   "category": "sfx/percs",
+   "original": "sfx/percs/lex clap.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/lex clap.mp3",
+   "norm": "norm/sfx/percs/lex_clap.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.432086
+   }
+  },
+  "sfx/percs/louis_bell": {
+   "id": "sfx/percs/louis_bell",
+   "category": "sfx/percs",
+   "original": "sfx/percs/louis_bell.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/louis_bell.wav",
+   "norm": "norm/sfx/percs/louis_bell.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 1,
+    "bits": 16,
+    "duration": 1.62576
+   }
+  },
+  "sfx/percs/ls_fx_25": {
+   "id": "sfx/percs/ls_fx_25",
+   "category": "sfx/percs",
+   "original": "sfx/percs/ls_fx_25.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/ls_fx_25.wav",
+   "norm": "norm/sfx/percs/ls_fx_25.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 0.412789
+   }
+  },
+  "sfx/percs/pop002": {
+   "id": "sfx/percs/pop002",
+   "category": "sfx/percs",
+   "original": "sfx/percs/pop002.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/pop002.wav",
+   "norm": "norm/sfx/percs/pop002.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 1,
+    "bits": 16,
+    "duration": 0.097959
+   }
+  },
+  "sfx/percs/synplant_ui_glitch_part_83": {
+   "id": "sfx/percs/synplant_ui_glitch_part_83",
+   "category": "sfx/percs",
+   "original": "sfx/percs/synplant_UI_glitch_-_Part_83.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/synplant_UI_glitch_-_Part_83.wav",
+   "norm": "norm/sfx/percs/synplant_ui_glitch_part_83.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.772358
+   }
+  },
+  "sfx/percs/triangle_hat": {
+   "id": "sfx/percs/triangle_hat",
+   "category": "sfx/percs",
+   "original": "sfx/percs/triangle hat.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/triangle hat.mp3",
+   "norm": "norm/sfx/percs/triangle_hat.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.432086
+   }
+  },
+  "sfx/percs/whips/gangsigns_whip": {
+   "id": "sfx/percs/whips/gangsigns_whip",
+   "category": "sfx/percs/whips",
+   "original": "sfx/percs/whips/GANGSIGNS_-_Whip.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/whips/GANGSIGNS_-_Whip.wav",
+   "norm": "norm/sfx/percs/whips/gangsigns_whip.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 24,
+    "duration": 1.055104
+   }
+  },
+  "sfx/percs/whips/id_whip_crack_fx": {
+   "id": "sfx/percs/whips/id_whip_crack_fx",
+   "category": "sfx/percs/whips",
+   "original": "sfx/percs/whips/ID\u2006- Whip\u2006Crack ( FX ).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/whips/ID\u2006- Whip\u2006Crack ( FX ).wav",
+   "norm": "norm/sfx/percs/whips/id_whip_crack_fx.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 1,
+    "bits": 32,
+    "duration": 0.596667
+   }
+  },
+  "sfx/percs/whips/jacksepticeye_high_five_sound_effect_gaalon_058_088": {
+   "id": "sfx/percs/whips/jacksepticeye_high_five_sound_effect_gaalon_058_088",
+   "category": "sfx/percs/whips",
+   "original": "sfx/percs/whips/Jacksepticeye High five sound effect - Gaalon 058-088.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/whips/Jacksepticeye High five sound effect - Gaalon 058-088.wav",
+   "norm": "norm/sfx/percs/whips/jacksepticeye_high_five_sound_effect_gaalon_058_088.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.710542
+   }
+  },
+  "sfx/percs/whips/oh_no_lab_stem_part_6": {
+   "id": "sfx/percs/whips/oh_no_lab_stem_part_6",
+   "category": "sfx/percs/whips",
+   "original": "sfx/percs/whips/Oh No Lab stem - Part_6.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/whips/Oh No Lab stem - Part_6.wav",
+   "norm": "norm/sfx/percs/whips/oh_no_lab_stem_part_6.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 2.0
+   }
+  },
+  "sfx/percs/whips/styles_hey_baby_loop_140_1_2_part_1": {
+   "id": "sfx/percs/whips/styles_hey_baby_loop_140_1_2_part_1",
+   "category": "sfx/percs/whips",
+   "original": "sfx/percs/whips/Styles Hey Baby Loop ! (140)-1_2 - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/whips/Styles Hey Baby Loop ! (140)-1_2 - Part_1.wav",
+   "norm": "norm/sfx/percs/whips/styles_hey_baby_loop_140_1_2_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.857143
+   }
+  },
+  "sfx/percs/whips/b1b8bfcabf91b9e9a9bf3dd33e6cc9f1_online_audio_converter_com_034_054": {
+   "id": "sfx/percs/whips/b1b8bfcabf91b9e9a9bf3dd33e6cc9f1_online_audio_converter_com_034_054",
+   "category": "sfx/percs/whips",
+   "original": "sfx/percs/whips/b1b8bfcabf91b9e9a9bf3dd33e6cc9f1 (online-audio-converter.com) 034-054.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/sfx/percs/whips/b1b8bfcabf91b9e9a9bf3dd33e6cc9f1 (online-audio-converter.com) 034-054.wav",
+   "norm": "norm/sfx/percs/whips/b1b8bfcabf91b9e9a9bf3dd33e6cc9f1_online_audio_converter_com_034_054.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.872766
+   }
+  },
+  "vocals/3_2_1_lets_go": {
+   "id": "vocals/3_2_1_lets_go",
+   "category": "vocals",
+   "original": "vocals/3 2 1 Lets Go !.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/3 2 1 Lets Go !.wav",
+   "norm": "norm/vocals/3_2_1_lets_go.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.666961
+   }
+  },
+  "vocals/50_bounce": {
+   "id": "vocals/50_bounce",
+   "category": "vocals",
+   "original": "vocals/50 Bounce.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/50 Bounce.mp3",
+   "norm": "norm/vocals/50_bounce.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.369719
+   }
+  },
+  "vocals/steeztheproducer_x_yeaa_hoe_cypher_jerseyclub_part_1": {
+   "id": "vocals/steeztheproducer_x_yeaa_hoe_cypher_jerseyclub_part_1",
+   "category": "vocals",
+   "original": "vocals/@SteezTheProducer x Yeaa Hoe Cypher JerseyClub - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/@SteezTheProducer x Yeaa Hoe Cypher JerseyClub - Part_1.wav",
+   "norm": "norm/vocals/steeztheproducer_x_yeaa_hoe_cypher_jerseyclub_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.658662
+   }
+  },
+  "vocals/ay_sso": {
+   "id": "vocals/ay_sso",
+   "category": "vocals",
+   "original": "vocals/AY SSO.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/AY SSO.wav",
+   "norm": "norm/vocals/ay_sso.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.342902
+   }
+  },
+  "vocals/ahhh_2k10": {
+   "id": "vocals/ahhh_2k10",
+   "category": "vocals",
+   "original": "vocals/Ahhh 2k10.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Ahhh 2k10.wav",
+   "norm": "norm/vocals/ahhh_2k10.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.433832
+   }
+  },
+  "vocals/anais_vocals": {
+   "id": "vocals/anais_vocals",
+   "category": "vocals",
+   "original": "vocals/Anais Vocals.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Anais Vocals.wav",
+   "norm": "norm/vocals/anais_vocals.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 5.616327
+   }
+  },
+  "vocals/ass_so_fat_hit_that_from_the_back_like": {
+   "id": "vocals/ass_so_fat_hit_that_from_the_back_like",
+   "category": "vocals",
+   "original": "vocals/Ass_So_Fat_Hit_That_From_The_Back_Like.m4a",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Ass_So_Fat_Hit_That_From_The_Back_Like.m4a",
+   "norm": "norm/vocals/ass_so_fat_hit_that_from_the_back_like.wav",
+   "orig_format": {
+    "codec": "aac",
+    "sr": 44100,
+    "channels": 1,
+    "bits": null,
+    "duration": 1.904036
+   }
+  },
+  "vocals/ass_real_right_vocals40cal": {
+   "id": "vocals/ass_real_right_vocals40cal",
+   "category": "vocals",
+   "original": "vocals/Ass_real_right_vocals40cal.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Ass_real_right_vocals40cal.mp3",
+   "norm": "norm/vocals/ass_real_right_vocals40cal.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 4.7804
+   }
+  },
+  "vocals/ayeeeeee_loop_1_1_2": {
+   "id": "vocals/ayeeeeee_loop_1_1_2",
+   "category": "vocals",
+   "original": "vocals/Ayeeeeee Loop - 1 - 1_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Ayeeeeee Loop - 1 - 1_2.wav",
+   "norm": "norm/vocals/ayeeeeee_loop_1_1_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 14.783651
+   }
+  },
+  "vocals/b_k_bangerz_heh_dance_type": {
+   "id": "vocals/b_k_bangerz_heh_dance_type",
+   "category": "vocals",
+   "original": "vocals/B.K BANGERZ- HEH DANCE TYPE.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/B.K BANGERZ- HEH DANCE TYPE.wav",
+   "norm": "norm/vocals/b_k_bangerz_heh_dance_type.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.453197
+   }
+  },
+  "vocals/big_girls_001_part_1": {
+   "id": "vocals/big_girls_001_part_1",
+   "category": "vocals",
+   "original": "vocals/BIG GIRLS 001 - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/BIG GIRLS 001 - Part_1.wav",
+   "norm": "norm/vocals/big_girls_001_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.468753
+   }
+  },
+  "vocals/buck_a": {
+   "id": "vocals/buck_a",
+   "category": "vocals",
+   "original": "vocals/BUCK A.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/BUCK A.mp3",
+   "norm": "norm/vocals/buck_a.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.501667
+   }
+  },
+  "vocals/back_to_work_loop": {
+   "id": "vocals/back_to_work_loop",
+   "category": "vocals",
+   "original": "vocals/Back To Work Loop.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Back To Work Loop.mp3",
+   "norm": "norm/vocals/back_to_work_loop.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 1.398617
+   }
+  },
+  "vocals/back_it_up_2": {
+   "id": "vocals/back_it_up_2",
+   "category": "vocals",
+   "original": "vocals/Back_It_Up_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Back_It_Up_2.wav",
+   "norm": "norm/vocals/back_it_up_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.416599
+   }
+  },
+  "vocals/bang_sample_2": {
+   "id": "vocals/bang_sample_2",
+   "category": "vocals",
+   "original": "vocals/Bang sample 2.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Bang sample 2.mp3",
+   "norm": "norm/vocals/bang_sample_2.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 1.506077
+   }
+  },
+  "vocals/big_ol_butt": {
+   "id": "vocals/big_ol_butt",
+   "category": "vocals",
+   "original": "vocals/Big_ol_Butt.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Big_ol_Butt.mp3",
+   "norm": "norm/vocals/big_ol_butt.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.918281
+   }
+  },
+  "vocals/bop_it_sample_2": {
+   "id": "vocals/bop_it_sample_2",
+   "category": "vocals",
+   "original": "vocals/Bop It Sample 2.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Bop It Sample 2.mp3",
+   "norm": "norm/vocals/bop_it_sample_2.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.432086
+   }
+  },
+  "vocals/bounce_2": {
+   "id": "vocals/bounce_2",
+   "category": "vocals",
+   "original": "vocals/Bounce 2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Bounce 2.wav",
+   "norm": "norm/vocals/bounce_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.333288
+   }
+  },
+  "vocals/calll_securityy": {
+   "id": "vocals/calll_securityy",
+   "category": "vocals",
+   "original": "vocals/Calll_Securityy.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Calll_Securityy.mp3",
+   "norm": "norm/vocals/calll_securityy.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 48000,
+    "channels": 2,
+    "bits": null,
+    "duration": 2.4752
+   }
+  },
+  "vocals/childish_gambino_v_3005_part_1_back": {
+   "id": "vocals/childish_gambino_v_3005_part_1_back",
+   "category": "vocals",
+   "original": "vocals/Childish_Gambino_-_V._3005_-_Part_1_BACK.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Childish_Gambino_-_V._3005_-_Part_1_BACK.wav",
+   "norm": "norm/vocals/childish_gambino_v_3005_part_1_back.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.212789
+   }
+  },
+  "vocals/damage": {
+   "id": "vocals/damage",
+   "category": "vocals",
+   "original": "vocals/DAMAGE.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/DAMAGE.wav",
+   "norm": "norm/vocals/damage.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.334717
+   }
+  },
+  "vocals/dj_r_l_crowd_motivator_09_unmixed_2": {
+   "id": "vocals/dj_r_l_crowd_motivator_09_unmixed_2",
+   "category": "vocals",
+   "original": "vocals/DJ R.L. - CROWD MOTIVATOR 09 - (UNMIXED)_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/DJ R.L. - CROWD MOTIVATOR 09 - (UNMIXED)_2.wav",
+   "norm": "norm/vocals/dj_r_l_crowd_motivator_09_unmixed_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.307937
+   }
+  },
+  "vocals/dontstoppopthatpussy_2": {
+   "id": "vocals/dontstoppopthatpussy_2",
+   "category": "vocals",
+   "original": "vocals/DONTSTOPPOPTHATPUSSY_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/DONTSTOPPOPTHATPUSSY_2.wav",
+   "norm": "norm/vocals/dontstoppopthatpussy_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 1.671043
+   }
+  },
+  "vocals/drop_it_down_sample": {
+   "id": "vocals/drop_it_down_sample",
+   "category": "vocals",
+   "original": "vocals/DROP_IT_DOWN-Sample.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/DROP_IT_DOWN-Sample.wav",
+   "norm": "norm/vocals/drop_it_down_sample.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.642063
+   }
+  },
+  "vocals/dragon_ballz_sample_000_022": {
+   "id": "vocals/dragon_ballz_sample_000_022",
+   "category": "vocals",
+   "original": "vocals/Dragon ballz sample 000-022.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Dragon ballz sample 000-022.wav",
+   "norm": "norm/vocals/dragon_ballz_sample_000_022.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.505057
+   }
+  },
+  "vocals/drop_to_the_floor_bounce_copy": {
+   "id": "vocals/drop_to_the_floor_bounce_copy",
+   "category": "vocals",
+   "original": "vocals/Drop to The Floor _ Bounce Copy.m4a",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Drop to The Floor _ Bounce Copy.m4a",
+   "norm": "norm/vocals/drop_to_the_floor_bounce_copy.wav",
+   "orig_format": {
+    "codec": "aac",
+    "sr": 44100,
+    "channels": 1,
+    "bits": null,
+    "duration": 1.532517
+   }
+  },
+  "vocals/eh_eh": {
+   "id": "vocals/eh_eh",
+   "category": "vocals",
+   "original": "vocals/EH EH.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/EH EH.wav",
+   "norm": "norm/vocals/eh_eh.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.701927
+   }
+  },
+  "vocals/first_u_gotta_put_yo_neck_into_it": {
+   "id": "vocals/first_u_gotta_put_yo_neck_into_it",
+   "category": "vocals",
+   "original": "vocals/First u gotta put yo neck into it.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/First u gotta put yo neck into it.wav",
+   "norm": "norm/vocals/first_u_gotta_put_yo_neck_into_it.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 32,
+    "duration": 1.334208
+   }
+  },
+  "vocals/fred_again_jozzy_ten_fred_again_part_2_wav_vocals_2": {
+   "id": "vocals/fred_again_jozzy_ten_fred_again_part_2_wav_vocals_2",
+   "category": "vocals",
+   "original": "vocals/Fred again.. & Jozzy - ten - Fred again . . - Part_2.wav_vocals_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Fred again.. & Jozzy - ten - Fred again . . - Part_2.wav_vocals_2.wav",
+   "norm": "norm/vocals/fred_again_jozzy_ten_fred_again_part_2_wav_vocals_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 1.264399
+   }
+  },
+  "vocals/future_move_that_dope_acapella_vocals_only_part_2": {
+   "id": "vocals/future_move_that_dope_acapella_vocals_only_part_2",
+   "category": "vocals",
+   "original": "vocals/Future - Move That Dope (Acapella - Vocals only) - Part_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Future - Move That Dope (Acapella - Vocals only) - Part_2.wav",
+   "norm": "norm/vocals/future_move_that_dope_acapella_vocals_only_part_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.461179
+   }
+  },
+  "vocals/ga_go_lil_jon": {
+   "id": "vocals/ga_go_lil_jon",
+   "category": "vocals",
+   "original": "vocals/GA GO (LIL JON).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/GA GO (LIL JON).wav",
+   "norm": "norm/vocals/ga_go_lil_jon.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.130938
+   }
+  },
+  "vocals/get_down_on_the_ground_5": {
+   "id": "vocals/get_down_on_the_ground_5",
+   "category": "vocals",
+   "original": "vocals/GET_DOWN_ON_THE_GROUND_-_5.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/GET_DOWN_ON_THE_GROUND_-_5.mp3",
+   "norm": "norm/vocals/get_down_on_the_ground_5.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 12.257375
+   }
+  },
+  "vocals/get_it": {
+   "id": "vocals/get_it",
+   "category": "vocals",
+   "original": "vocals/Get it .mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Get it .mp3",
+   "norm": "norm/vocals/get_it.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 2.249116
+   }
+  },
+  "vocals/haaaah_part_1": {
+   "id": "vocals/haaaah_part_1",
+   "category": "vocals",
+   "original": "vocals/HAAAAH! - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/HAAAAH! - Part_1.wav",
+   "norm": "norm/vocals/haaaah_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.561791
+   }
+  },
+  "vocals/haaaah_2": {
+   "id": "vocals/haaaah_2",
+   "category": "vocals",
+   "original": "vocals/HAAAAH!_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/HAAAAH!_2.wav",
+   "norm": "norm/vocals/haaaah_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 1.010068
+   }
+  },
+  "vocals/hands_3": {
+   "id": "vocals/hands_3",
+   "category": "vocals",
+   "original": "vocals/Hands (3).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Hands (3).wav",
+   "norm": "norm/vocals/hands_3.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.452812
+   }
+  },
+  "vocals/hay": {
+   "id": "vocals/hay",
+   "category": "vocals",
+   "original": "vocals/Hay!.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Hay!.mp3",
+   "norm": "norm/vocals/hay.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.291344
+   }
+  },
+  "vocals/head": {
+   "id": "vocals/head",
+   "category": "vocals",
+   "original": "vocals/Head.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Head.mp3",
+   "norm": "norm/vocals/head.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.458209
+   }
+  },
+  "vocals/hey": {
+   "id": "vocals/hey",
+   "category": "vocals",
+   "original": "vocals/Hey.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Hey.mp3",
+   "norm": "norm/vocals/hey.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 1.048906
+   }
+  },
+  "vocals/hey_2": {
+   "id": "vocals/hey_2",
+   "category": "vocals",
+   "original": "vocals/Hey.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Hey.wav",
+   "norm": "norm/vocals/hey_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.439955
+   }
+  },
+  "vocals/high_3": {
+   "id": "vocals/high_3",
+   "category": "vocals",
+   "original": "vocals/High_3.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/High_3.wav",
+   "norm": "norm/vocals/high_3.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.52737
+   }
+  },
+  "vocals/hit_dat_ass_from_the_back": {
+   "id": "vocals/hit_dat_ass_from_the_back",
+   "category": "vocals",
+   "original": "vocals/Hit_Dat_Ass_from_the_back.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Hit_Dat_Ass_from_the_back.wav",
+   "norm": "norm/vocals/hit_dat_ass_from_the_back.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.818186
+   }
+  },
+  "vocals/hu_chant_13": {
+   "id": "vocals/hu_chant_13",
+   "category": "vocals",
+   "original": "vocals/Hu (chant 13).mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Hu (chant 13).mp3",
+   "norm": "norm/vocals/hu_chant_13.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.680544
+   }
+  },
+  "vocals/i_like_how_she": {
+   "id": "vocals/i_like_how_she",
+   "category": "vocals",
+   "original": "vocals/I Like how she.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/I Like how she.wav",
+   "norm": "norm/vocals/i_like_how_she.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.75
+   }
+  },
+  "vocals/i_tote_guns_sample": {
+   "id": "vocals/i_tote_guns_sample",
+   "category": "vocals",
+   "original": "vocals/I TOTE GUNS sample.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/I TOTE GUNS sample.mp3",
+   "norm": "norm/vocals/i_tote_guns_sample.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.899161
+   }
+  },
+  "vocals/id_famous_hey_chant": {
+   "id": "vocals/id_famous_hey_chant",
+   "category": "vocals",
+   "original": "vocals/ID - Famous Hey ( Chant ).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/ID - Famous Hey ( Chant ).wav",
+   "norm": "norm/vocals/id_famous_hey_chant.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.846145
+   }
+  },
+  "vocals/id_aye_chant": {
+   "id": "vocals/id_aye_chant",
+   "category": "vocals",
+   "original": "vocals/ID\u2006- Aye ( Chant ).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/ID\u2006- Aye ( Chant ).wav",
+   "norm": "norm/vocals/id_aye_chant.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.213787
+   }
+  },
+  "vocals/jc_vox_11": {
+   "id": "vocals/jc_vox_11",
+   "category": "vocals",
+   "original": "vocals/JC_Vox_11.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/JC_Vox_11.wav",
+   "norm": "norm/vocals/jc_vox_11.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.300998
+   }
+  },
+  "vocals/jc_vox_49": {
+   "id": "vocals/jc_vox_49",
+   "category": "vocals",
+   "original": "vocals/JC_Vox_49.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/JC_Vox_49.wav",
+   "norm": "norm/vocals/jc_vox_49.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 1.736599
+   }
+  },
+  "vocals/juicy_j_yeah_hoe_2": {
+   "id": "vocals/juicy_j_yeah_hoe_2",
+   "category": "vocals",
+   "original": "vocals/Juicy J - yeah hoe_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Juicy J - yeah hoe_2.wav",
+   "norm": "norm/vocals/juicy_j_yeah_hoe_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.919637
+   }
+  },
+  "vocals/keke_bounce": {
+   "id": "vocals/keke_bounce",
+   "category": "vocals",
+   "original": "vocals/KeKe Bounce.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/KeKe Bounce.wav",
+   "norm": "norm/vocals/keke_bounce.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.042517
+   }
+  },
+  "vocals/kick_the_baby_sample": {
+   "id": "vocals/kick_the_baby_sample",
+   "category": "vocals",
+   "original": "vocals/Kick the baby sample .mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Kick the baby sample .mp3",
+   "norm": "norm/vocals/kick_the_baby_sample.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 2.832857
+   }
+  },
+  "vocals/lil_jon_ayy_2": {
+   "id": "vocals/lil_jon_ayy_2",
+   "category": "vocals",
+   "original": "vocals/LIL JON AYY_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/LIL JON AYY_2.wav",
+   "norm": "norm/vocals/lil_jon_ayy_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.584694
+   }
+  },
+  "vocals/left_right": {
+   "id": "vocals/left_right",
+   "category": "vocals",
+   "original": "vocals/Left Right.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Left Right.mp3",
+   "norm": "norm/vocals/left_right.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.721156
+   }
+  },
+  "vocals/oh_up_to_the": {
+   "id": "vocals/oh_up_to_the",
+   "category": "vocals",
+   "original": "vocals/Oh up to the.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Oh up to the.wav",
+   "norm": "norm/vocals/oh_up_to_the.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 0.666667
+   }
+  },
+  "vocals/radioo": {
+   "id": "vocals/radioo",
+   "category": "vocals",
+   "original": "vocals/Radioo.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Radioo.wav",
+   "norm": "norm/vocals/radioo.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.757551
+   }
+  },
+  "vocals/reese_back_it_up_loop_part_2": {
+   "id": "vocals/reese_back_it_up_loop_part_2",
+   "category": "vocals",
+   "original": "vocals/Reese Back It Up Loop - Part_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Reese Back It Up Loop - Part_2.wav",
+   "norm": "norm/vocals/reese_back_it_up_loop_part_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.609637
+   }
+  },
+  "vocals/russian_yell": {
+   "id": "vocals/russian_yell",
+   "category": "vocals",
+   "original": "vocals/Russian_Yell.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Russian_Yell.wav",
+   "norm": "norm/vocals/russian_yell.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 0.727279
+   }
+  },
+  "vocals/stop": {
+   "id": "vocals/stop",
+   "category": "vocals",
+   "original": "vocals/STOP.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/STOP.wav",
+   "norm": "norm/vocals/stop.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.606984
+   }
+  },
+  "vocals/switch_it_up": {
+   "id": "vocals/switch_it_up",
+   "category": "vocals",
+   "original": "vocals/SWITCH IT UP.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/SWITCH IT UP.wav",
+   "norm": "norm/vocals/switch_it_up.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.519229
+   }
+  },
+  "vocals/spanish_heyyyy_2": {
+   "id": "vocals/spanish_heyyyy_2",
+   "category": "vocals",
+   "original": "vocals/Spanish Heyyyy_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Spanish Heyyyy_2.wav",
+   "norm": "norm/vocals/spanish_heyyyy_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.480068
+   }
+  },
+  "vocals/stick_em_sample": {
+   "id": "vocals/stick_em_sample",
+   "category": "vocals",
+   "original": "vocals/Stick em Sample.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Stick em Sample.mp3",
+   "norm": "norm/vocals/stick_em_sample.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.484331
+   }
+  },
+  "vocals/these_nutz_mg_burto_stxrz_jerseyclub_mgburto_i_love_yall_consolidated_consolidated_2": {
+   "id": "vocals/these_nutz_mg_burto_stxrz_jerseyclub_mgburto_i_love_yall_consolidated_consolidated_2",
+   "category": "vocals",
+   "original": "vocals/These Nutz Mg Burto #Stxrz #JerseyClub - MgBurto I Love Yall\ud83d\udda4\ud83d\udcaf (consolidated) (consolidated)_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/These Nutz Mg Burto #Stxrz #JerseyClub - MgBurto I Love Yall\ud83d\udda4\ud83d\udcaf (consolidated) (consolidated)_2.wav",
+   "norm": "norm/vocals/these_nutz_mg_burto_stxrz_jerseyclub_mgburto_i_love_yall_consolidated_consolidated_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 10.680544
+   }
+  },
+  "vocals/vm_clubeyvox_2": {
+   "id": "vocals/vm_clubeyvox_2",
+   "category": "vocals",
+   "original": "vocals/VM_ClubEyVox_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/VM_ClubEyVox_2.wav",
+   "norm": "norm/vocals/vm_clubeyvox_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.248413
+   }
+  },
+  "vocals/vocals_part_1": {
+   "id": "vocals/vocals_part_1",
+   "category": "vocals",
+   "original": "vocals/Vocals - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Vocals - Part_1.wav",
+   "norm": "norm/vocals/vocals_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 32,
+    "duration": 1.038458
+   }
+  },
+  "vocals/we_in_jersey_right_now": {
+   "id": "vocals/we_in_jersey_right_now",
+   "category": "vocals",
+   "original": "vocals/We In Jersey Right Now !.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/We In Jersey Right Now !.wav",
+   "norm": "norm/vocals/we_in_jersey_right_now.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.41483
+   }
+  },
+  "vocals/yo_sample": {
+   "id": "vocals/yo_sample",
+   "category": "vocals",
+   "original": "vocals/YO Sample.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/YO Sample.wav",
+   "norm": "norm/vocals/yo_sample.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.417959
+   }
+  },
+  "vocals/yt2mp3_info_destroyers_let_s_destroy_them_320kbps_2": {
+   "id": "vocals/yt2mp3_info_destroyers_let_s_destroy_them_320kbps_2",
+   "category": "vocals",
+   "original": "vocals/YT2mp3.info_-_Destroyers___Let_s_destroy_them_320kbps_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/YT2mp3.info_-_Destroyers___Let_s_destroy_them_320kbps_2.wav",
+   "norm": "norm/vocals/yt2mp3_info_destroyers_let_s_destroy_them_320kbps_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 2.076122
+   }
+  },
+  "vocals/yea": {
+   "id": "vocals/yea",
+   "category": "vocals",
+   "original": "vocals/Yea.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Yea.mp3",
+   "norm": "norm/vocals/yea.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.432086
+   }
+  },
+  "vocals/yep_2": {
+   "id": "vocals/yep_2",
+   "category": "vocals",
+   "original": "vocals/Yep (2).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/Yep (2).wav",
+   "norm": "norm/vocals/yep_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.348889
+   }
+  },
+  "vocals/ahhh": {
+   "id": "vocals/ahhh",
+   "category": "vocals",
+   "original": "vocals/ahhh!.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/ahhh!.wav",
+   "norm": "norm/vocals/ahhh.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.925692
+   }
+  },
+  "vocals/ahhhoo": {
+   "id": "vocals/ahhhoo",
+   "category": "vocals",
+   "original": "vocals/ahhhoo.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/ahhhoo.wav",
+   "norm": "norm/vocals/ahhhoo.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.906259
+   }
+  },
+  "vocals/ai": {
+   "id": "vocals/ai",
+   "category": "vocals",
+   "original": "vocals/ai.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/ai.wav",
+   "norm": "norm/vocals/ai.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 1,
+    "bits": 16,
+    "duration": 1.044898
+   }
+  },
+  "vocals/are_you_ready_wav_vocals_2": {
+   "id": "vocals/are_you_ready_wav_vocals_2",
+   "category": "vocals",
+   "original": "vocals/are you ready.wav_vocals_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/are you ready.wav_vocals_2.wav",
+   "norm": "norm/vocals/are_you_ready_wav_vocals_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.499116
+   }
+  },
+  "vocals/b_goodie_px_bounce_sample": {
+   "id": "vocals/b_goodie_px_bounce_sample",
+   "category": "vocals",
+   "original": "vocals/b goodie px bounce sample.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/b goodie px bounce sample.wav",
+   "norm": "norm/vocals/b_goodie_px_bounce_sample.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.61805
+   }
+  },
+  "vocals/baby_got": {
+   "id": "vocals/baby_got",
+   "category": "vocals",
+   "original": "vocals/baby got.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/baby got.wav",
+   "norm": "norm/vocals/baby_got.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.372404
+   }
+  },
+  "vocals/back_2": {
+   "id": "vocals/back_2",
+   "category": "vocals",
+   "original": "vocals/back 2.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/back 2.mp3",
+   "norm": "norm/vocals/back_2.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.249229
+   }
+  },
+  "vocals/back_to_the_back": {
+   "id": "vocals/back_to_the_back",
+   "category": "vocals",
+   "original": "vocals/back to the back.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/back to the back.mp3",
+   "norm": "norm/vocals/back_to_the_back.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.680544
+   }
+  },
+  "vocals/back": {
+   "id": "vocals/back",
+   "category": "vocals",
+   "original": "vocals/back.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/back.wav",
+   "norm": "norm/vocals/back.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.456735
+   }
+  },
+  "vocals/back_drake": {
+   "id": "vocals/back_drake",
+   "category": "vocals",
+   "original": "vocals/back_drake.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/back_drake.wav",
+   "norm": "norm/vocals/back_drake.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.324331
+   }
+  },
+  "vocals/backback": {
+   "id": "vocals/backback",
+   "category": "vocals",
+   "original": "vocals/backback.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/backback.wav",
+   "norm": "norm/vocals/backback.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.692313
+   }
+  },
+  "vocals/backoff_buster": {
+   "id": "vocals/backoff_buster",
+   "category": "vocals",
+   "original": "vocals/backoff buster.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/backoff buster.wav",
+   "norm": "norm/vocals/backoff_buster.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.187506
+   }
+  },
+  "vocals/bestfriend_she_finna": {
+   "id": "vocals/bestfriend_she_finna",
+   "category": "vocals",
+   "original": "vocals/bestfriend she finna.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/bestfriend she finna.wav",
+   "norm": "norm/vocals/bestfriend_she_finna.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.6161
+   }
+  },
+  "vocals/bestfriend_you_bettah": {
+   "id": "vocals/bestfriend_you_bettah",
+   "category": "vocals",
+   "original": "vocals/bestfriend you bettah.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/bestfriend you bettah.wav",
+   "norm": "norm/vocals/bestfriend_you_bettah.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.09966
+   }
+  },
+  "vocals/birthdaaayyg_lighhh_vocals_156": {
+   "id": "vocals/birthdaaayyg_lighhh_vocals_156",
+   "category": "vocals",
+   "original": "vocals/birthdaaayyg_lighhh_vocals_156.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/birthdaaayyg_lighhh_vocals_156.wav",
+   "norm": "norm/vocals/birthdaaayyg_lighhh_vocals_156.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 16.923084
+   }
+  },
+  "vocals/bodybag": {
+   "id": "vocals/bodybag",
+   "category": "vocals",
+   "original": "vocals/bodybag.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/bodybag.wav",
+   "norm": "norm/vocals/bodybag.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.666667
+   }
+  },
+  "vocals/bounce_tone": {
+   "id": "vocals/bounce_tone",
+   "category": "vocals",
+   "original": "vocals/bounce tone.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/bounce tone.wav",
+   "norm": "norm/vocals/bounce_tone.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.93
+   }
+  },
+  "vocals/bounce": {
+   "id": "vocals/bounce",
+   "category": "vocals",
+   "original": "vocals/bounce.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/bounce.mp3",
+   "norm": "norm/vocals/bounce.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.680544
+   }
+  },
+  "vocals/bring_it_back_2_2": {
+   "id": "vocals/bring_it_back_2_2",
+   "category": "vocals",
+   "original": "vocals/bring it back 2_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/bring it back 2_2.wav",
+   "norm": "norm/vocals/bring_it_back_2_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.75
+   }
+  },
+  "vocals/bxtches": {
+   "id": "vocals/bxtches",
+   "category": "vocals",
+   "original": "vocals/bxtches !.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/bxtches !.mp3",
+   "norm": "norm/vocals/bxtches.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 1,
+    "bits": null,
+    "duration": 20.8196
+   }
+  },
+  "vocals/chrome_to_ya_dome": {
+   "id": "vocals/chrome_to_ya_dome",
+   "category": "vocals",
+   "original": "vocals/chrome_to_ya_dome.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/chrome_to_ya_dome.wav",
+   "norm": "norm/vocals/chrome_to_ya_dome.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.417143
+   }
+  },
+  "vocals/cuff_yo_chick": {
+   "id": "vocals/cuff_yo_chick",
+   "category": "vocals",
+   "original": "vocals/cuff yo chick.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/cuff yo chick.wav",
+   "norm": "norm/vocals/cuff_yo_chick.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.677075
+   }
+  },
+  "vocals/dat_apple": {
+   "id": "vocals/dat_apple",
+   "category": "vocals",
+   "original": "vocals/dAT APPLE.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/dAT APPLE.wav",
+   "norm": "norm/vocals/dat_apple.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 1,
+    "bits": 16,
+    "duration": 124.190476
+   }
+  },
+  "vocals/dat_apple_part_6": {
+   "id": "vocals/dat_apple_part_6",
+   "category": "vocals",
+   "original": "vocals/dAT_APPLE_-_Part_6.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/dAT_APPLE_-_Part_6.wav",
+   "norm": "norm/vocals/dat_apple_part_6.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 1,
+    "bits": 16,
+    "duration": 3.017868
+   }
+  },
+  "vocals/deep_down_low": {
+   "id": "vocals/deep_down_low",
+   "category": "vocals",
+   "original": "vocals/deep down low.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/deep down low.wav",
+   "norm": "norm/vocals/deep_down_low.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 0.875011
+   }
+  },
+  "vocals/deskrat_birthdaaayyg_lighhh_vocals_156": {
+   "id": "vocals/deskrat_birthdaaayyg_lighhh_vocals_156",
+   "category": "vocals",
+   "original": "vocals/deskrat_birthdaaayyg_lighhh_vocals_156.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/deskrat_birthdaaayyg_lighhh_vocals_156.wav",
+   "norm": "norm/vocals/deskrat_birthdaaayyg_lighhh_vocals_156.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 16.923084
+   }
+  },
+  "vocals/dizzie_i_love_you": {
+   "id": "vocals/dizzie_i_love_you",
+   "category": "vocals",
+   "original": "vocals/dizzie_i_love_you.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/dizzie_i_love_you.wav",
+   "norm": "norm/vocals/dizzie_i_love_you.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 1.714286
+   }
+  },
+  "vocals/do_it_3": {
+   "id": "vocals/do_it_3",
+   "category": "vocals",
+   "original": "vocals/do it 3.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/do it 3.wav",
+   "norm": "norm/vocals/do_it_3.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.343741
+   }
+  },
+  "vocals/dont_get_it_twisted_1": {
+   "id": "vocals/dont_get_it_twisted_1",
+   "category": "vocals",
+   "original": "vocals/dont_get_it_twisted (1).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/dont_get_it_twisted (1).wav",
+   "norm": "norm/vocals/dont_get_it_twisted_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 96000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 2.193635
+   }
+  },
+  "vocals/dope_yo_shyt": {
+   "id": "vocals/dope_yo_shyt",
+   "category": "vocals",
+   "original": "vocals/dope yo shyt.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/dope yo shyt.mp3",
+   "norm": "norm/vocals/dope_yo_shyt.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 1,
+    "bits": null,
+    "duration": 23.2751
+   }
+  },
+  "vocals/drop_it": {
+   "id": "vocals/drop_it",
+   "category": "vocals",
+   "original": "vocals/drop it.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/drop it.wav",
+   "norm": "norm/vocals/drop_it.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.31907
+   }
+  },
+  "vocals/drop_it2": {
+   "id": "vocals/drop_it2",
+   "category": "vocals",
+   "original": "vocals/drop it2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/drop it2.wav",
+   "norm": "norm/vocals/drop_it2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.343741
+   }
+  },
+  "vocals/drop_sample": {
+   "id": "vocals/drop_sample",
+   "category": "vocals",
+   "original": "vocals/drop sample.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/drop sample.wav",
+   "norm": "norm/vocals/drop_sample.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.276327
+   }
+  },
+  "vocals/eh_rip": {
+   "id": "vocals/eh_rip",
+   "category": "vocals",
+   "original": "vocals/eh_rip.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/eh_rip.mp3",
+   "norm": "norm/vocals/eh_rip.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 48000,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.336
+   }
+  },
+  "vocals/emani": {
+   "id": "vocals/emani",
+   "category": "vocals",
+   "original": "vocals/emani.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/emani.mp3",
+   "norm": "norm/vocals/emani.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 9.659501
+   }
+  },
+  "vocals/f": {
+   "id": "vocals/f",
+   "category": "vocals",
+   "original": "vocals/f.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/f.mp3",
+   "norm": "norm/vocals/f.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 1.581474
+   }
+  },
+  "vocals/from_the_back_loop_010_014": {
+   "id": "vocals/from_the_back_loop_010_014",
+   "category": "vocals",
+   "original": "vocals/from the back loop 010-014.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/from the back loop 010-014.wav",
+   "norm": "norm/vocals/from_the_back_loop_010_014.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.566916
+   }
+  },
+  "vocals/get_em_2": {
+   "id": "vocals/get_em_2",
+   "category": "vocals",
+   "original": "vocals/get em 2.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/get em 2.mp3",
+   "norm": "norm/vocals/get_em_2.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.353719
+   }
+  },
+  "vocals/go": {
+   "id": "vocals/go",
+   "category": "vocals",
+   "original": "vocals/go.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/go.mp3",
+   "norm": "norm/vocals/go.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.448094
+   }
+  },
+  "vocals/hiei_audio_msg": {
+   "id": "vocals/hiei_audio_msg",
+   "category": "vocals",
+   "original": "vocals/hiei_audio_msg.m4a",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/hiei_audio_msg.m4a",
+   "norm": "norm/vocals/hiei_audio_msg.wav",
+   "orig_format": {
+    "codec": "aac",
+    "sr": 24000,
+    "channels": 1,
+    "bits": null,
+    "duration": 12.032
+   }
+  },
+  "vocals/i_just_wanna_fuck_2": {
+   "id": "vocals/i_just_wanna_fuck_2",
+   "category": "vocals",
+   "original": "vocals/i just wanna fuck_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/i just wanna fuck_2.wav",
+   "norm": "norm/vocals/i_just_wanna_fuck_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.0
+   }
+  },
+  "vocals/i_just_wanna_rock": {
+   "id": "vocals/i_just_wanna_rock",
+   "category": "vocals",
+   "original": "vocals/i just wanna rock.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/i just wanna rock.wav",
+   "norm": "norm/vocals/i_just_wanna_rock.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 3.562494
+   }
+  },
+  "vocals/illsquad14_s_119th_mix": {
+   "id": "vocals/illsquad14_s_119th_mix",
+   "category": "vocals",
+   "original": "vocals/illsquad14's_119th_mix.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/illsquad14's_119th_mix.wav",
+   "norm": "norm/vocals/illsquad14_s_119th_mix.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.628639
+   }
+  },
+  "vocals/lemme_see_you_hit_that_footwork_like": {
+   "id": "vocals/lemme_see_you_hit_that_footwork_like",
+   "category": "vocals",
+   "original": "vocals/lemme see you hit that footwork like.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/lemme see you hit that footwork like.mp3",
+   "norm": "norm/vocals/lemme_see_you_hit_that_footwork_like.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 1.649719
+   }
+  },
+  "vocals/let_that_girl_loose": {
+   "id": "vocals/let_that_girl_loose",
+   "category": "vocals",
+   "original": "vocals/let_that_girl_loose.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/let_that_girl_loose.wav",
+   "norm": "norm/vocals/let_that_girl_loose.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.6
+   }
+  },
+  "vocals/like_a_new_jack": {
+   "id": "vocals/like_a_new_jack",
+   "category": "vocals",
+   "original": "vocals/like a new jack.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/like a new jack.wav",
+   "norm": "norm/vocals/like_a_new_jack.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 96000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 2.076927
+   }
+  },
+  "vocals/like_this_like_that_sample_mp4_1": {
+   "id": "vocals/like_this_like_that_sample_mp4_1",
+   "category": "vocals",
+   "original": "vocals/like_this_like_that_sample_mp4 (1).mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/like_this_like_that_sample_mp4 (1).mp3",
+   "norm": "norm/vocals/like_this_like_that_sample_mp4_1.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 6.757007
+   }
+  },
+  "vocals/move_ur_body_jump": {
+   "id": "vocals/move_ur_body_jump",
+   "category": "vocals",
+   "original": "vocals/move ur body jump.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/move ur body jump.mp3",
+   "norm": "norm/vocals/move_ur_body_jump.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 1.33625
+   }
+  },
+  "vocals/my_shit_was": {
+   "id": "vocals/my_shit_was",
+   "category": "vocals",
+   "original": "vocals/my shit was.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/my shit was.wav",
+   "norm": "norm/vocals/my_shit_was.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.546032
+   }
+  },
+  "vocals/neck_into_it_2": {
+   "id": "vocals/neck_into_it_2",
+   "category": "vocals",
+   "original": "vocals/neck into it_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/neck into it_2.wav",
+   "norm": "norm/vocals/neck_into_it_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 96000,
+    "channels": 2,
+    "bits": 32,
+    "duration": 1.321073
+   }
+  },
+  "vocals/ntell_jordan_this_is_how_we_do_it_acapella_accapella_a_capella_vocal_vocals_vox_samples_for_mashup_remix_remixing_djmixsource_dotcom": {
+   "id": "vocals/ntell_jordan_this_is_how_we_do_it_acapella_accapella_a_capella_vocal_vocals_vox_samples_for_mashup_remix_remixing_djmixsource_dotcom",
+   "category": "vocals",
+   "original": "vocals/ntell_jordan-this_is_how_we_do_it_(_Acapella_-_Accapella_-_A_capella_-_Vocal_-_Vocals_-_Vox_-_Samples_-_for_mashup_remix_remixing_-_DJMixSource_DOTCOM_).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/ntell_jordan-this_is_how_we_do_it_(_Acapella_-_Accapella_-_A_capella_-_Vocal_-_Vocals_-_Vox_-_Samples_-_for_mashup_remix_remixing_-_DJMixSource_DOTCOM_).wav",
+   "norm": "norm/vocals/ntell_jordan_this_is_how_we_do_it_acapella_accapella_a_capella_vocal_vocals_vox_samples_for_mashup_remix_remixing_djmixsource_dotcom.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.801406
+   }
+  },
+  "vocals/oh_oh": {
+   "id": "vocals/oh_oh",
+   "category": "vocals",
+   "original": "vocals/oh oh.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/oh oh.mp3",
+   "norm": "norm/vocals/oh_oh.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.680544
+   }
+  },
+  "vocals/oow": {
+   "id": "vocals/oow",
+   "category": "vocals",
+   "original": "vocals/oow.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/oow.wav",
+   "norm": "norm/vocals/oow.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.502336
+   }
+  },
+  "vocals/pac_man_sound": {
+   "id": "vocals/pac_man_sound",
+   "category": "vocals",
+   "original": "vocals/pac man sound.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/pac man sound.wav",
+   "norm": "norm/vocals/pac_man_sound.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.661179
+   }
+  },
+  "vocals/pause": {
+   "id": "vocals/pause",
+   "category": "vocals",
+   "original": "vocals/pause.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/pause.wav",
+   "norm": "norm/vocals/pause.wav",
+   "orig_format": {
+    "codec": "wmav2",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.371
+   }
+  },
+  "vocals/pull_it": {
+   "id": "vocals/pull_it",
+   "category": "vocals",
+   "original": "vocals/pull it.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/pull it.wav",
+   "norm": "norm/vocals/pull_it.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.253923
+   }
+  },
+  "vocals/pump_up_the": {
+   "id": "vocals/pump_up_the",
+   "category": "vocals",
+   "original": "vocals/pump up the.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/pump up the.wav",
+   "norm": "norm/vocals/pump_up_the.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.309206
+   }
+  },
+  "vocals/raspberry": {
+   "id": "vocals/raspberry",
+   "category": "vocals",
+   "original": "vocals/raspberry.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/raspberry.wav",
+   "norm": "norm/vocals/raspberry.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.471224
+   }
+  },
+  "vocals/shae_rock": {
+   "id": "vocals/shae_rock",
+   "category": "vocals",
+   "original": "vocals/shae_rock.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/shae_rock.wav",
+   "norm": "norm/vocals/shae_rock.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 1,
+    "bits": 16,
+    "duration": 0.416168
+   }
+  },
+  "vocals/shake_that": {
+   "id": "vocals/shake_that",
+   "category": "vocals",
+   "original": "vocals/shake that.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/shake that.wav",
+   "norm": "norm/vocals/shake_that.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.892744
+   }
+  },
+  "vocals/sound_familiar": {
+   "id": "vocals/sound_familiar",
+   "category": "vocals",
+   "original": "vocals/sound_familiar.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/sound_familiar.wav",
+   "norm": "norm/vocals/sound_familiar.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 16.303583
+   }
+  },
+  "vocals/take_your_gun": {
+   "id": "vocals/take_your_gun",
+   "category": "vocals",
+   "original": "vocals/take_your_gun.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/take_your_gun.wav",
+   "norm": "norm/vocals/take_your_gun.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.638549
+   }
+  },
+  "vocals/tang_it": {
+   "id": "vocals/tang_it",
+   "category": "vocals",
+   "original": "vocals/tang it.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/tang it.wav",
+   "norm": "norm/vocals/tang_it.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.348209
+   }
+  },
+  "vocals/tetete_damn": {
+   "id": "vocals/tetete_damn",
+   "category": "vocals",
+   "original": "vocals/tetete_damn.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/tetete_damn.wav",
+   "norm": "norm/vocals/tetete_damn.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 2.823537
+   }
+  },
+  "vocals/this_pussy_will_drive_you_crazy": {
+   "id": "vocals/this_pussy_will_drive_you_crazy",
+   "category": "vocals",
+   "original": "vocals/this pussy will drive you crazy.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/this pussy will drive you crazy.wav",
+   "norm": "norm/vocals/this_pussy_will_drive_you_crazy.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 96000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.668271
+   }
+  },
+  "vocals/tiktok_7283262292546964778_audio_vocals_split_by_lalalai_part_1": {
+   "id": "vocals/tiktok_7283262292546964778_audio_vocals_split_by_lalalai_part_1",
+   "category": "vocals",
+   "original": "vocals/tiktok_7283262292546964778_audio_vocals_split_by_lalalai - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/tiktok_7283262292546964778_audio_vocals_split_by_lalalai - Part_1.wav",
+   "norm": "norm/vocals/tiktok_7283262292546964778_audio_vocals_split_by_lalalai_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.596145
+   }
+  },
+  "vocals/tut_my_booty": {
+   "id": "vocals/tut_my_booty",
+   "category": "vocals",
+   "original": "vocals/tut my booty.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/tut my booty.mp3",
+   "norm": "norm/vocals/tut_my_booty.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 1,
+    "bits": null,
+    "duration": 18.8343
+   }
+  },
+  "vocals/up": {
+   "id": "vocals/up",
+   "category": "vocals",
+   "original": "vocals/up.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/up.wav",
+   "norm": "norm/vocals/up.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.620952
+   }
+  },
+  "vocals/vocal_loops/a_bay_bay_vox_loop_140bpm": {
+   "id": "vocals/vocal_loops/a_bay_bay_vox_loop_140bpm",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/A Bay Bay Vox Loop 140bpm.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/A Bay Bay Vox Loop 140bpm.wav",
+   "norm": "norm/vocals/vocal_loops/a_bay_bay_vox_loop_140bpm.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 27.428571
+   }
+  },
+  "vocals/vocal_loops/a_bay_bay_vox_loop_2_136bpm": {
+   "id": "vocals/vocal_loops/a_bay_bay_vox_loop_2_136bpm",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/A Bay Bay Vox Loop 2 136bpm.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/A Bay Bay Vox Loop 2 136bpm.wav",
+   "norm": "norm/vocals/vocal_loops/a_bay_bay_vox_loop_2_136bpm.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 7.058821
+   }
+  },
+  "vocals/vocal_loops/drop_vocals_139bpm_2": {
+   "id": "vocals/vocal_loops/drop_vocals_139bpm_2",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/DROP Vocals 139bpm_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/DROP Vocals 139bpm_2.wav",
+   "norm": "norm/vocals/vocal_loops/drop_vocals_139bpm_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 13.812971
+   }
+  },
+  "vocals/vocal_loops/fred_again_jozzy_ten_fred_again_part_1_wav_vocals_2": {
+   "id": "vocals/vocal_loops/fred_again_jozzy_ten_fred_again_part_1_wav_vocals_2",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/Fred again.. & Jozzy - ten - Fred again . . - Part_1.wav_vocals_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/Fred again.. & Jozzy - ten - Fred again . . - Part_1.wav_vocals_2.wav",
+   "norm": "norm/vocals/vocal_loops/fred_again_jozzy_ten_fred_again_part_1_wav_vocals_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 15.043243
+   }
+  },
+  "vocals/vocal_loops/future_move_that_dope_acapella_vocals_only_part_1": {
+   "id": "vocals/vocal_loops/future_move_that_dope_acapella_vocals_only_part_1",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/Future - Move That Dope (Acapella - Vocals only) - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/Future - Move That Dope (Acapella - Vocals only) - Part_1.wav",
+   "norm": "norm/vocals/vocal_loops/future_move_that_dope_acapella_vocals_only_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 3.687642
+   }
+  },
+  "vocals/vocal_loops/hilfiger_ahhh_loop_tellztheproducer_2": {
+   "id": "vocals/vocal_loops/hilfiger_ahhh_loop_tellztheproducer_2",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/Hilfiger Ahhh Loop (TellzTheProducer)_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/Hilfiger Ahhh Loop (TellzTheProducer)_2.wav",
+   "norm": "norm/vocals/vocal_loops/hilfiger_ahhh_loop_tellztheproducer_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 12.804172
+   }
+  },
+  "vocals/vocal_loops/hilfiger_echo_whoaa_and_yeaah_loop_tellztheproducer": {
+   "id": "vocals/vocal_loops/hilfiger_echo_whoaa_and_yeaah_loop_tellztheproducer",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/Hilfiger Echo Whoaa And Yeaah Loop (TellzTheProducer).wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/Hilfiger Echo Whoaa And Yeaah Loop (TellzTheProducer).wav",
+   "norm": "norm/vocals/vocal_loops/hilfiger_echo_whoaa_and_yeaah_loop_tellztheproducer.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 13.245692
+   }
+  },
+  "vocals/vocal_loops/hilfigers_bring_it_back_up_loop_tellztheproducer": {
+   "id": "vocals/vocal_loops/hilfigers_bring_it_back_up_loop_tellztheproducer",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/Hilfigers_Bring_It_Back_Up_Loop_TellzTheProducer.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/Hilfigers_Bring_It_Back_Up_Loop_TellzTheProducer.wav",
+   "norm": "norm/vocals/vocal_loops/hilfigers_bring_it_back_up_loop_tellztheproducer.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 13.478458
+   }
+  },
+  "vocals/vocal_loops/my_back_vocals": {
+   "id": "vocals/vocal_loops/my_back_vocals",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/My back vocals.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/My back vocals.mp3",
+   "norm": "norm/vocals/vocal_loops/my_back_vocals.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 13.421134
+   }
+  },
+  "vocals/vocal_loops/push_it": {
+   "id": "vocals/vocal_loops/push_it",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/Push It.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/Push It.wav",
+   "norm": "norm/vocals/vocal_loops/push_it.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 5.332494
+   }
+  },
+  "vocals/vocal_loops/rock_it_ft_jdub_soundcloud_version_vocals_part_1": {
+   "id": "vocals/vocal_loops/rock_it_ft_jdub_soundcloud_version_vocals_part_1",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/Rock It ft JDub SoundCloud Version_vocals - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/Rock It ft JDub SoundCloud Version_vocals - Part_1.wav",
+   "norm": "norm/vocals/vocal_loops/rock_it_ft_jdub_soundcloud_version_vocals_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 12.0
+   }
+  },
+  "vocals/vocal_loops/styles_hey_baby_loop_140_1_2": {
+   "id": "vocals/vocal_loops/styles_hey_baby_loop_140_1_2",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/Styles Hey Baby Loop ! (140)-1_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/Styles Hey Baby Loop ! (140)-1_2.wav",
+   "norm": "norm/vocals/vocal_loops/styles_hey_baby_loop_140_1_2.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 13.766531
+   }
+  },
+  "vocals/vocal_loops/twerk_hands_up_high": {
+   "id": "vocals/vocal_loops/twerk_hands_up_high",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/Twerk Hands Up High.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/Twerk Hands Up High.wav",
+   "norm": "norm/vocals/vocal_loops/twerk_hands_up_high.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 83.2
+   }
+  },
+  "vocals/vocal_loops/yea_2": {
+   "id": "vocals/vocal_loops/yea_2",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/Yea 2.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/Yea 2.mp3",
+   "norm": "norm/vocals/vocal_loops/yea_2.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 72.781156
+   }
+  },
+  "vocals/vocal_loops/avengers_2_back_it_up": {
+   "id": "vocals/vocal_loops/avengers_2_back_it_up",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/avengers 2 back it up .mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/avengers 2 back it up .mp3",
+   "norm": "norm/vocals/vocal_loops/avengers_2_back_it_up.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 5.393265
+   }
+  },
+  "vocals/vocal_loops/baby_part_1": {
+   "id": "vocals/vocal_loops/baby_part_1",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/baby - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/baby - Part_1.wav",
+   "norm": "norm/vocals/vocal_loops/baby_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 20.538526
+   }
+  },
+  "vocals/vocal_loops/bestfriend_loop": {
+   "id": "vocals/vocal_loops/bestfriend_loop",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/bestfriend loop.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/bestfriend loop.wav",
+   "norm": "norm/vocals/vocal_loops/bestfriend_loop.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 3.159138
+   }
+  },
+  "vocals/vocal_loops/deepdownlow_loop_140": {
+   "id": "vocals/vocal_loops/deepdownlow_loop_140",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/deepdownlow_loop_140.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/deepdownlow_loop_140.wav",
+   "norm": "norm/vocals/vocal_loops/deepdownlow_loop_140.wav",
+   "orig_format": {
+    "codec": "pcm_s24le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 24,
+    "duration": 32.589297
+   }
+  },
+  "vocals/vocal_loops/do_it_loop": {
+   "id": "vocals/vocal_loops/do_it_loop",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/do it loop .mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/do it loop .mp3",
+   "norm": "norm/vocals/vocal_loops/do_it_loop.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 5.333333
+   }
+  },
+  "vocals/vocal_loops/drop_it_down_loop_185bpm": {
+   "id": "vocals/vocal_loops/drop_it_down_loop_185bpm",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/drop it down loop 185bpm.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/drop it down loop 185bpm.wav",
+   "norm": "norm/vocals/vocal_loops/drop_it_down_loop_185bpm.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 5.189184
+   }
+  },
+  "vocals/vocal_loops/fire_loop": {
+   "id": "vocals/vocal_loops/fire_loop",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/fire loop.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/fire loop.wav",
+   "norm": "norm/vocals/vocal_loops/fire_loop.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 5.407347
+   }
+  },
+  "vocals/vocal_loops/from_the_back_loop": {
+   "id": "vocals/vocal_loops/from_the_back_loop",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/from the back loop.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/from the back loop.mp3",
+   "norm": "norm/vocals/vocal_loops/from_the_back_loop.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 12.85625
+   }
+  },
+  "vocals/vocal_loops/hazard_go_loop_part_1": {
+   "id": "vocals/vocal_loops/hazard_go_loop_part_1",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/hazard go loop - Part_1.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/hazard go loop - Part_1.wav",
+   "norm": "norm/vocals/vocal_loops/hazard_go_loop_part_1.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 3.026735
+   }
+  },
+  "vocals/vocal_loops/i_can_tell_youre_lookin_at_me_vox_loop_140bpm": {
+   "id": "vocals/vocal_loops/i_can_tell_youre_lookin_at_me_vox_loop_140bpm",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/i can tell youre lookin at me vox loop 140bpm.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/i can tell youre lookin at me vox loop 140bpm.wav",
+   "norm": "norm/vocals/vocal_loops/i_can_tell_youre_lookin_at_me_vox_loop_140bpm.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 27.857143
+   }
+  },
+  "vocals/vocal_loops/music_make_you_loop": {
+   "id": "vocals/vocal_loops/music_make_you_loop",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/music make you loop.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/music make you loop.mp3",
+   "norm": "norm/vocals/vocal_loops/music_make_you_loop.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 12.64725
+   }
+  },
+  "vocals/vocal_loops/oh_up_to_the_loop_185bpm": {
+   "id": "vocals/vocal_loops/oh_up_to_the_loop_185bpm",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/oh up to the loop 185bpm.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/oh up to the loop 185bpm.wav",
+   "norm": "norm/vocals/vocal_loops/oh_up_to_the_loop_185bpm.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 5.189184
+   }
+  },
+  "vocals/vocal_loops/shake_it_down_loop_160": {
+   "id": "vocals/vocal_loops/shake_it_down_loop_160",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/shake it down loop 160.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/shake it down loop 160.wav",
+   "norm": "norm/vocals/vocal_loops/shake_it_down_loop_160.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 6.0
+   }
+  },
+  "vocals/vocal_loops/shake_it_down": {
+   "id": "vocals/vocal_loops/shake_it_down",
+   "category": "vocals/vocal_loops",
+   "original": "vocals/vocal loops/shake_it_down.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/vocal loops/shake_it_down.wav",
+   "norm": "norm/vocals/vocal_loops/shake_it_down.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 6.4
+   }
+  },
+  "vocals/wait_a_min": {
+   "id": "vocals/wait_a_min",
+   "category": "vocals",
+   "original": "vocals/wait a min.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/wait a min.wav",
+   "norm": "norm/vocals/wait_a_min.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.680544
+   }
+  },
+  "vocals/weed_guaranteed_2": {
+   "id": "vocals/weed_guaranteed_2",
+   "category": "vocals",
+   "original": "vocals/weed guaranteed_2.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/weed guaranteed_2.wav",
+   "norm": "norm/vocals/weed_guaranteed_2.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 48000,
+    "channels": 2,
+    "bits": 32,
+    "duration": 1.899958
+   }
+  },
+  "vocals/weird_hit": {
+   "id": "vocals/weird_hit",
+   "category": "vocals",
+   "original": "vocals/weird_hit.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/weird_hit.wav",
+   "norm": "norm/vocals/weird_hit.wav",
+   "orig_format": {
+    "codec": "pcm_f32le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 32,
+    "duration": 0.378912
+   }
+  },
+  "vocals/werk": {
+   "id": "vocals/werk",
+   "category": "vocals",
+   "original": "vocals/werk.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/werk.wav",
+   "norm": "norm/vocals/werk.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.331746
+   }
+  },
+  "vocals/woo_left_and_right": {
+   "id": "vocals/woo_left_and_right",
+   "category": "vocals",
+   "original": "vocals/woo left and right.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/woo left and right.wav",
+   "norm": "norm/vocals/woo_left_and_right.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 2,
+    "bits": 16,
+    "duration": 1.297302
+   }
+  },
+  "vocals/woooo_male": {
+   "id": "vocals/woooo_male",
+   "category": "vocals",
+   "original": "vocals/woooo_male.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/woooo_male.wav",
+   "norm": "norm/vocals/woooo_male.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 96000,
+    "channels": 2,
+    "bits": 16,
+    "duration": 0.724531
+   }
+  },
+  "vocals/work_loop": {
+   "id": "vocals/work_loop",
+   "category": "vocals",
+   "original": "vocals/work loop.mp3",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/work loop.mp3",
+   "norm": "norm/vocals/work_loop.wav",
+   "orig_format": {
+    "codec": "mp3",
+    "sr": 44100,
+    "channels": 2,
+    "bits": null,
+    "duration": 0.771678
+   }
+  },
+  "vocals/yashae_ladies_booty_bounce_to_this": {
+   "id": "vocals/yashae_ladies_booty_bounce_to_this",
+   "category": "vocals",
+   "original": "vocals/yashae ladies booty bounce to this.wav",
+   "original_abs": "/Users/ember/Downloads/@twerknation28 2023 sample pack/vocals/yashae ladies booty bounce to this.wav",
+   "norm": "norm/vocals/yashae_ladies_booty_bounce_to_this.wav",
+   "orig_format": {
+    "codec": "pcm_s16le",
+    "sr": 44100,
+    "channels": 1,
+    "bits": 16,
+    "duration": 3.156213
+   }
+  }
+ }
+}
