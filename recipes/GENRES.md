@@ -7,23 +7,63 @@ violate one constraint on purpose.
 
 ---
 
-## Jersey club — 130–145 bpm (home: 135–140)
-- **Kick:** `x..x..x...x.x...` (steps 0,3,6,10,12: "1, a-of-1, &-of-2, &-of-3, 4"). Variants: drop step 12
-  on alternate bars; `x..x..x.x.x.x...` ("the bounce"); 2-bar phrasing with the second bar ending in a roll.
-- **Rolls/fills:** triplet kick rolls `tricks.roll(step="16t")` into section changes; 32nd stutters of the
-  vocal with `accel=0.85` (`tricks.stutter`).
-- **Bed squeak:** on the "e" or "a" 16ths (`..x...x...x...x.` or `.x...x...x...x..`) or mirroring the kick an
-  octave up. One squeak per 4 steps is restraint; two is Philly.
-- **Claps:** 2 and 4 (`....x.......x...`), often layered clap+snap. No snare drum.
-- **Hats:** sparse; the `opera_hihat_loop` or 8th-note snaps. Many Jersey tracks have *no* hats.
-- **Vocals:** a 1–2 word chop repeated *on the kick rhythm* is the hook ("back it up" → `x..x..x.`), pitched up
-  +2..+4 in later sections, call-and-response with chants (`hey`, `ayy`), count-ins before drops, "we in Jersey".
-- **FX:** reloads on the "a" of 4 before a drop, whip cracks, sirens on the last bar of a build.
-- **Arrangement (DJ friendly):** 8 bars vocal/sample intro → 8 kick+hook → 8 full → 4–8 break (kick out, vocal
-  stutter build) → 16 full → 8 outro drums-only. 16-bar phrases; changes every 8.
-- **Pack picks:** `id_night_club_808` (+4 st), `bed_squeak_*`, `2018_clap`+`snap_02`, `back_it_up_2`, `bring_it_back_2_2`,
-  `we_in_jersey_right_now`, `id_famous_hey_chant`, `3_2_1_lets_go`, `reload`, `purge_siren`, `everybody_loop_138bpm`.
-- **Pitfalls:** untruncated 808 kicks drone; the pattern's 3-step gaps are the groove — do not fill them.
+## Jersey club — 130–145 bpm (home: 135–140, "sweet spot ~137")
+*Researched 2026-10-04 (producer forums, NI/plugg-supply guides, scene Twitter); primitives in `kitforge/idioms.py`.*
+- **Kick — the 5-count:** `x...x...x..x..x.` = 16ths **0, 4, 8, 11, 14** ("K---K---K--K--K": two quarter
+  notes, two dotted eighths, an eighth). The late 14th step is the forward pull. Variants: 2-bar phrasing with a
+  pickup `…x..x.x.x` in bar 2; "the bounce" `x...x...x.x.x.x.`. The tresillo-first `x..x..x...x.x...` (0,3,6,10,12)
+  is **Baltimore** grammar — jersey01.py used it; it works, but it is not the Jersey signature.
+  Program it mechanically: equal velocity, no swing, no humanize. Layer sub + mid + click; "a hint of reverb".
+  `idioms.jersey_kick(song, sample)` does all of this.
+- **Claps:** 2 and 4 (`....x.......x...`), optional ghost before the 4 (`....x.....7.x...`). No snare drum.
+- **Bed squeak:** rhythmic SFX *between* the kicks, never on them (`..x...x...x..x..`); offset so the two do not
+  mask. "Don't abuse the squeak and the water drip" — one per 4 steps is taste, every 8th is Philly.
+- **808 / bass follows the kick** rhythm on the root, slides to new roots every 4–8 bars (F2→G#2→G2-style).
+  `idioms.bass_follows_kick`. HP the kick (~30–40 Hz) if the 808 owns the sub, or the reverse.
+- **Vocals are the lead instrument — rhythm made of voice.** The canon: *chop on a single note, then pitch
+  the chop* to build melodies and chords (root / 5th / 10th); ±7 st harmonizes, ±12 for octave stacks
+  ("layer the low octave with the original and a high-pitched version" — `idioms.vocal_stack`);
+  `idioms.chop_melody` transposes from the manifest's detected pitch so the chop really sings the notes.
+  Stutters: filtered delay (~1 kHz, 1–2 repeats, `idioms.stutter_delay`) or manual duplicates with falling
+  velocity (`idioms.velocity_stutter`) — the scene prefers the manual one for control. One syllable repeated
+  4–8 times on the 16th grid is the signature. Hooks are 1–2 words on the kick rhythm; chants (`hey`, `ayy`,
+  "what") answer them. Jersey = vocal cut-ups; Bmore = chants.
+- **Transitions:** quick pitch drops (`idioms.pitch_drop`), quick pitch-envelope risers (`idioms.PitchRiser`),
+  glitchy stutters, reversed crash into the 1 (`idioms.reverse_crash`), reloads/gunshots on the "a" of 4,
+  sirens on the last bar. `idioms.flip` bundles a section switch.
+- **Arrangement:** loop-first. Build the 8-bar loop, then add/drop at 8-bar boundaries: 8 intro (kick + squeak or
+  vocal only) → 8 full → 8 strip (vocals or bass out) → 8 full reload → wind-down. 16-bar DJ intro/outro for tools.
+- **Mix:** kick needs physical weight and a click; squeak sits mid-high; chops bright and loud; light sidechain
+  of 808 to kick; do not over-compress — the stutter energy *is* the dynamics. Clipped kicks are a feature.
+- **Pack picks:** `id_night_club_808` (+4 st) or `kick031_2`, `snap_02` click, `bed_squeak_*`, `2018_clap`+`snap_01`,
+  `back_it_up_2`, `bring_it_back_2_2`, `we_in_jersey_right_now`, `id_famous_hey_chant`, `hey_2`, `3_2_1_lets_go`,
+  `reload`, `purge_siren`, `ahhh`/`oh_oh`/`ai` as single-note chop material, `everybody_loop_138bpm`.
+
+## Internet Jersey / hyperflip / dariacore — 140–160 bpm (the twerknation28 house style)
+Who: **Twerknation28 is a SoundCloud collective/channel (@TN28EXCLUSIVE)** at the centre of the 2021–23 online
+Jersey wave — host of Jane Remover's *leroy* "Obsessed Post-Frailty Extended Jersey Mix" (2022), Lyrical Lemonade
+"Get Refreshed" Jan 2022, a 166-track archive; `elxnce` (whose 100 bpm preview is in this pack) posts there.
+Scene verdicts: "twerknation28 ruined a whole generation of jersey prods" (i.e. everyone copied it);
+"Twerknation28 and hyperflip from 2022 still sounds like the future"; dariacore = "Rustie + SOPHIE with an
+aggressively Gen Z twist", "sample collage", "crushed up drops". The pack's contents (pop/anime/meme rips, lo-fi
+mp3s, Fred again.. and Future acapellas, Pac-Man, Dragon Ball) are exactly this scene's raw material.
+- **Foundation:** the Jersey 5-count kick and squeak, but at 145–160 and *louder*: clipped kicks, crushed
+  drop bus (`idioms.crush`), master pushed to -6..-8 LUFS.
+- **Collage:** a new recognizable sample every 2–8 bars; nightcore-pitched vocals (`idioms.nightcore(+4..+7)`,
+  resample mode so they speed up too); sung hooks re-pitched to the key; meme SFX as percussion
+  (`pac_man_sound`, `dragon_ballz_sample`, `synplant_ui_glitch`, `swish_buzzer`, `jacksepticeye_high_five`).
+- **Harmony:** future-bass supersaw chords (`Supersaw`, Surge "Pads/…", "Polysynths/…") sidechained hard to the
+  kick (`sidechain(amount_db=9..12, release_ms=90)`), 7th/9th voicings, often major-key pop progressions under
+  the aggressive drums. Vocal-chop melodies via `chop_melody` doubled by a pluck.
+- **Flips:** every 8 bars something breaks: `idioms.flip` (riser + roll + reverse crash + impact), `pitch_drop`
+  on the outgoing bus, `tape_stop`, half-time bar, a bar of silence then the sample alone, `velocity_stutter`
+  accelerating into the 1 (`stutter(accel=0.8)`).
+- **Texture:** `bitcrush(bits=8..10)` on a chop bus, `telephone` on a verse sample, `vinyl` for an intro, mp3
+  sizzle left in on purpose; `stutter_delay` echoes on chants.
+- **Jokes:** a spoken sample answering the hook (`pause`, `wait_a_min`, `calll_securityy`, `hiei_audio_msg`),
+  the count-in that never drops, the Wii-Sports-style voice line.
+- **Pitfalls:** maximalism without holes is mud — keep the Jersey space between kicks; keep one element the
+  listener can follow across flips (usually the vocal hook or the chord loop).
 
 ## Philly club — 140–150 bpm
 Jersey's faster, nastier sibling. Same 5-kick grammar but **more kicks** (`x..x..x.x.x.x.x.`), double-time
@@ -32,7 +72,8 @@ gun foley (`galil_boltpull`, `m3_pump`), vocals chopped to syllables and pitch-l
 norm here. Arrangement is shorter and more abrupt: 4-bar switches.
 
 ## Baltimore club — 125–135 bpm
-- **Kick:** tresillo base `x..x..x.` + straight backbeat; common 2-bar: `x..x..x.x.x.x... | x..x..x.x...x.x.`.
+- **Kick:** tresillo-first `x..x..x...x.x...` (0,3,6,10,12) and variants `x..x..x.x.x.x...`; 2-bar phrasing common.
+  Compare Jersey's `x...x...x..x..x.` — Jersey front-loads straight quarters, Bmore front-loads the tresillo.
 - **Breaks:** the "Think" and "Sing Sing" breaks under everything (NOT in this pack — the only break here is
   `tajdrums_isolated_150` stretched down and `hat_break_break`; or build one from `2018_clap`/`stomptom`/`snap_02`).
 - **Vocals:** chanted hooks repeated for 8–16 bars without variation; crowd shouts; call-and-response with a
